@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>FRM学习记录 | Zeng +</title><meta name="author" content="Zeng +"><meta name="copyright" content="Zeng +"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2. 投资组合管理 核心理论: MPT理论: 现代投资组合理论的核心原理与有效边界 CAPM模型:  ﻿E(Ri)&#x3D;Rf+βi(E(Rm)−Rf)E(Ri​)&#x3D;Rf​+βi​(E(Rm​)−Rf​)﻿  的推导与应用 APT模型: 多因子定价机制与套利原理   学习重点: 逻辑衔接: 各模型间存在严格推导关系，需循序渐进理解 定量计算: 掌握β系数计算、组合方差公式等核心计算">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FRM学习记录">
+<meta property="og:url" content="https://zengplus.github.io/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Zeng +">
+<meta property="og:description" content="2. 投资组合管理 核心理论: MPT理论: 现代投资组合理论的核心原理与有效边界 CAPM模型:  ﻿E(Ri)&#x3D;Rf+βi(E(Rm)−Rf)E(Ri​)&#x3D;Rf​+βi​(E(Rm​)−Rf​)﻿  的推导与应用 APT模型: 多因子定价机制与套利原理   学习重点: 逻辑衔接: 各模型间存在严格推导关系，需循序渐进理解 定量计算: 掌握β系数计算、组合方差公式等核心计算">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/zengplus.png">
+<meta property="article:published_time" content="2026-01-05T15:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-18T09:48:00.874Z">
+<meta property="article:author" content="Zeng +">
+<meta property="article:tag" content="FRM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/zengplus.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "FRM学习记录",
+  "url": "https://zengplus.github.io/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/",
+  "image": "https://github.com/zengplus.png",
+  "datePublished": "2026-01-05T15:00:00.000Z",
+  "dateModified": "2026-03-18T09:48:00.874Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zeng +",
+      "url": "https://zengplus.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://zengplus.github.io/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'FRM学习记录',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/home.jpeg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Zeng +</span></a><a class="nav-page-title" href="/"><span class="site-name">FRM学习记录</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">FRM学习记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-05T15:00:00.000Z" title="发表于 2026-01-06 00:00:00">2026-01-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-03-18T09:48:00.874Z" title="更新于 2026-03-18 18:48:00">2026-03-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="2-投资组合管理"><a href="#2-投资组合管理" class="headerlink" title="2. 投资组合管理"></a>2. 投资组合管理</h1><ul>
+<li>核心理论:<ul>
+<li>MPT理论: 现代投资组合理论的核心原理与有效边界</li>
+<li>CAPM模型:<br>  ﻿E(Ri)&#x3D;Rf+βi(E(Rm)−Rf)E(Ri​)&#x3D;Rf​+βi​(E(Rm​)−Rf​)﻿<br>  的推导与应用</li>
+<li>APT模型: 多因子定价机制与套利原理</li>
+</ul>
+</li>
+<li>学习重点:<ul>
+<li>逻辑衔接: 各模型间存在严格推导关系，需循序渐进理解</li>
+<li>定量计算: 掌握β系数计算、组合方差公式等核心计算</li>
+<li>实务应用: 业绩衡量指标（夏普比率、特雷诺比率等）的对比分析</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-4-现代投资组合理论和资本资产定价模型"><a href="#2-4-现代投资组合理论和资本资产定价模型" class="headerlink" title="2.4 现代投资组合理论和资本资产定价模型(###)"></a>2.4 现代投资组合理论和资本资产定价模型(###)</h2><h2 id="2-5-业绩衡量指标"><a href="#2-5-业绩衡量指标" class="headerlink" title="2.5 业绩衡量指标(###)"></a>2.5 业绩衡量指标(###)</h2><h2 id="2-6-套利定价模型和多因子模型"><a href="#2-6-套利定价模型和多因子模型" class="headerlink" title="2.6 套利定价模型和多因子模型(###)"></a>2.6 套利定价模型和多因子模型(###)</h2><h1 id="3-高级风险管理"><a href="#3-高级风险管理" class="headerlink" title="3.  高级风险管理"></a>3.  高级风险管理</h1><ul>
+<li>数据整合:<ul>
+<li>原则: 数据标准化、系统集成、可视化呈现</li>
+<li>输出: 风险报告的制作要点与决策支持功能</li>
+</ul>
+</li>
+<li>ERM体系:<ul>
+<li>核心理念: 打破风险孤岛，实现全面协同管理</li>
+<li>实施难点: 风险偏好传导、风险限额分配、风险聚合技术</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-7-有效的数据整合和风险报告原则"><a href="#3-7-有效的数据整合和风险报告原则" class="headerlink" title="3.7 有效的数据整合和风险报告原则(#)"></a>3.7 有效的数据整合和风险报告原则(#)</h2><h2 id="3-8-企业风险管理"><a href="#3-8-企业风险管理" class="headerlink" title="3.8 企业风险管理(##)"></a>3.8 企业风险管理(##)</h2><h1 id="4-金融危机与风险案例"><a href="#4-金融危机与风险案例" class="headerlink" title="4. 金融危机与风险案例"></a>4. 金融危机与风险案例</h1><ul>
+<li>案例教学:<ul>
+<li>2008危机: 次贷危机传导机制与CDO产品缺陷分析</li>
+<li>历史教训: 15个经典案例的风险管理失效关键点</li>
+</ul>
+</li>
+<li>学习技巧:<ul>
+<li>产品先行: 建议学完衍生品课程后再深入案例分析</li>
+<li>记忆方法: 建立”风险类型-触发因素-传导路径-应对措施”分析框架</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-9-剖析2007年到2009年全球金融危机"><a href="#4-9-剖析2007年到2009年全球金融危机" class="headerlink" title="4.9 剖析2007年到2009年全球金融危机(##)"></a>4.9 剖析2007年到2009年全球金融危机(##)</h2><h2 id="4-10-金融灾难案例分析"><a href="#4-10-金融灾难案例分析" class="headerlink" title="4.10 金融灾难案例分析(###)"></a>4.10 金融灾难案例分析(###)</h2><p>﻿</p>
+<h1 id="5-道德"><a href="#5-道德" class="headerlink" title="5. 道德"></a>5. 道德</h1><h2 id="5-11-GARP行为准则"><a href="#5-11-GARP行为准则" class="headerlink" title="5.11 GARP行为准则﻿(##)"></a>5.11 GARP行为准则﻿(##)</h2><ul>
+<li>GARP准则:<ul>
+<li>核心要求: 专业诚信、利益冲突披露、保密义务</li>
+<li>考试特点: 纯记忆性内容，建议考前集中突破</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://zengplus.github.io">Zeng +</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zengplus.github.io/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/">https://zengplus.github.io/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://zengplus.github.io" target="_blank">Zeng +</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/FRM/">FRM</a></div><div class="post-share"><div class="social-share" data-image="https://github.com/zengplus.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/" title="FRM风险管理学习记录"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">FRM风险管理学习记录</div></div><div class="info-2"><div class="info-item-1">高顿 FRM一级20% 1. 风险管理基础知识(##) 模块特点: 定性理解为主，重要程度较低（1-2星） 学习要点: 风险定义: 区分风险与不确定性的本质区别 分类体系: 掌握市场风险、信用风险、操作风险等主要风险类别 管理流程: 从识别到监控的完整风险管理生命周期 治理架构: 董事会、风险管理委员会等治理主体的职责划分    1.1  风险管理基础模块1.1.1 风险的概念 核心本质：风险是对不确定性的暴露（exposure），这种不确定性既可能带来损失也可能带来收益，是危险和机遇的结合体。 与损失的区别：风险≠损失。损失是确定性事件（如100%损失1亿元），而风险具有不确定性（如50%赚1万&#x2F;50%亏1万）。 敞口概念：在金融领域常用”敞口”表示风险暴露程度，例如银行发放100万贷款，其信用风险敞口就是100万。  1.1.2 预期损失和非预期损失1. 预期损失的定义和特点 基本定义：指持仓或投资组合可能遭受的平均损失（Expected Loss, EL）。 管理特点： 可合理预测（如拉面店预计每日打翻10碗面） 已计入产品定价（40元→42元） 不构成重大威胁 ...</div></div></div></a><a class="pagination-related" href="/2025/07/16/2025-07-16-%E8%A1%8C%E6%B5%8B%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="行测学习记录"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">行测学习记录</div></div><div class="info-2"><div class="info-item-1">前言在国企考试中题型多样化，个人接触的几种为：  多数考试为 60%行测 + 40%公基  金融机构为考试为  60%行测 + 20%公基 + 20%英语  银行考试为 20%英语 + 80%公基   个人学习路线是  在行测中，言语部分即使是没有经过系统学习过，也是可以进行写，但数量没有经过系统学习，写起来会很痛苦，个人优先数量   数量（行测）-&gt; 经济（公基）  1. 行测1.1 数量跟刘文超老师的免费数量 + 蒙题 1.1.1 工程问题（重点） 刘文超老师课程P5易 高频  1. 给定时间型列表即可 2. 效率制约型如何判断题型是否是效率制约？1.工作效率比2:32.提升20% -&gt; 1:1.23.42台收割机效率为。。。。。4.&#x3D;&#x3D;某一部分&#x3D;&#x3D;工程 （甲使用5天、乙3天） -&gt; 甲：乙&#x3D;3:5 1.1.2 路程问题 刘文超老师P6难  1.上下坡&amp;往返 &#x3D;&gt; 等距离公式平均速度 &#x3D; （2 * v1 * v2）&#x2F; （v1 + v2） 1.1.3排列组合 刘文超老...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/" title="FRM风险管理学习记录"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-07</div><div class="info-item-2">FRM风险管理学习记录</div></div><div class="info-2"><div class="info-item-1">高顿 FRM一级20% 1. 风险管理基础知识(##) 模块特点: 定性理解为主，重要程度较低（1-2星） 学习要点: 风险定义: 区分风险与不确定性的本质区别 分类体系: 掌握市场风险、信用风险、操作风险等主要风险类别 管理流程: 从识别到监控的完整风险管理生命周期 治理架构: 董事会、风险管理委员会等治理主体的职责划分    1.1  风险管理基础模块1.1.1 风险的概念 核心本质：风险是对不确定性的暴露（exposure），这种不确定性既可能带来损失也可能带来收益，是危险和机遇的结合体。 与损失的区别：风险≠损失。损失是确定性事件（如100%损失1亿元），而风险具有不确定性（如50%赚1万&#x2F;50%亏1万）。 敞口概念：在金融领域常用”敞口”表示风险暴露程度，例如银行发放100万贷款，其信用风险敞口就是100万。  1.1.2 预期损失和非预期损失1. 预期损失的定义和特点 基本定义：指持仓或投资组合可能遭受的平均损失（Expected Loss, EL）。 管理特点： 可合理预测（如拉面店预计每日打翻10碗面） 已计入产品定价（40元→42元） 不构成重大威胁 ...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://github.com/zengplus.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Zeng +</div><div class="author-info-description">个人博客，分享编程笔记和日常思考</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zengplus"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/zengplus" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">2. 投资组合管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E7%8E%B0%E4%BB%A3%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%90%86%E8%AE%BA%E5%92%8C%E8%B5%84%E6%9C%AC%E8%B5%84%E4%BA%A7%E5%AE%9A%E4%BB%B7%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">2.4 现代投资组合理论和资本资产定价模型(###)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E4%B8%9A%E7%BB%A9%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A0%87"><span class="toc-number">1.2.</span> <span class="toc-text">2.5 业绩衡量指标(###)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-%E5%A5%97%E5%88%A9%E5%AE%9A%E4%BB%B7%E6%A8%A1%E5%9E%8B%E5%92%8C%E5%A4%9A%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">2.6 套利定价模型和多因子模型(###)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E9%AB%98%E7%BA%A7%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">3.  高级风险管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-%E6%9C%89%E6%95%88%E7%9A%84%E6%95%B0%E6%8D%AE%E6%95%B4%E5%90%88%E5%92%8C%E9%A3%8E%E9%99%A9%E6%8A%A5%E5%91%8A%E5%8E%9F%E5%88%99"><span class="toc-number">2.1.</span> <span class="toc-text">3.7 有效的数据整合和风险报告原则(#)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8-%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86"><span class="toc-number">2.2.</span> <span class="toc-text">3.8 企业风险管理(##)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E9%87%91%E8%9E%8D%E5%8D%B1%E6%9C%BA%E4%B8%8E%E9%A3%8E%E9%99%A9%E6%A1%88%E4%BE%8B"><span class="toc-number">3.</span> <span class="toc-text">4. 金融危机与风险案例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-9-%E5%89%96%E6%9E%902007%E5%B9%B4%E5%88%B02009%E5%B9%B4%E5%85%A8%E7%90%83%E9%87%91%E8%9E%8D%E5%8D%B1%E6%9C%BA"><span class="toc-number">3.1.</span> <span class="toc-text">4.9 剖析2007年到2009年全球金融危机(##)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-10-%E9%87%91%E8%9E%8D%E7%81%BE%E9%9A%BE%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90"><span class="toc-number">3.2.</span> <span class="toc-text">4.10 金融灾难案例分析(###)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E9%81%93%E5%BE%B7"><span class="toc-number">4.</span> <span class="toc-text">5. 道德</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-11-GARP%E8%A1%8C%E4%B8%BA%E5%87%86%E5%88%99"><span class="toc-number">4.1.</span> <span class="toc-text">5.11 GARP行为准则﻿(##)</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/" title="FRM风险管理学习记录">FRM风险管理学习记录</a><time datetime="2026-01-06T15:00:00.000Z" title="发表于 2026-01-07 00:00:00">2026-01-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/" title="FRM学习记录">FRM学习记录</a><time datetime="2026-01-05T15:00:00.000Z" title="发表于 2026-01-06 00:00:00">2026-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/16/2025-07-16-%E8%A1%8C%E6%B5%8B%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="行测学习记录">行测学习记录</a><time datetime="2025-07-15T15:00:00.000Z" title="发表于 2025-07-16 00:00:00">2025-07-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/13/2025-07-13-%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E8%87%AA%E8%AE%B0%E5%BD%95/" title="量化金融自记录">量化金融自记录</a><time datetime="2025-07-12T15:00:00.000Z" title="发表于 2025-07-13 00:00:00">2025-07-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/27/2025-05-27-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%87%AA%E8%AE%B0%E5%BD%95/" title="博客搭建自记录">博客搭建自记录</a><time datetime="2025-05-26T15:00:00.000Z" title="发表于 2025-05-27 00:00:00">2025-05-27</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Zeng +</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Zeng + - 记录技术与生活</title><meta name="author" content="Zeng +"><meta name="copyright" content="Zeng +"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="个人博客，分享编程笔记和日常思考">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zeng +">
+<meta property="og:url" content="https://zengplus.github.io/index.html">
+<meta property="og:site_name" content="Zeng +">
+<meta property="og:description" content="个人博客，分享编程笔记和日常思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/zengplus.png">
+<meta property="article:author" content="Zeng +">
+<meta property="article:tag" content="技术,博客,编程,Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/zengplus.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Zeng +",
+  "alternateName": [
+    "记录技术与生活",
+    "zengplus.github.io"
+  ],
+  "url": "https://zengplus.github.io/"
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://zengplus.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Zeng +',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/home.jpeg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Zeng +</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">Zeng +</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/zengplus" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/" title="FRM风险管理学习记录">FRM风险管理学习记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-01-06T15:00:00.000Z" title="发表于 2026-01-07 00:00:00">2026-01-07</time></span></div><div class="content">高顿 FRM一级20% 1. 风险管理基础知识(##) 模块特点: 定性理解为主，重要程度较低（1-2星） 学习要点: 风险定义: 区分风险与不确定性的本质区别 分类体系: 掌握市场风险、信用风险、操作风险等主要风险类别 管理流程: 从识别到监控的完整风险管理生命周期 治理架构: 董事会、风险管理委员会等治理主体的职责划分    1.1  风险管理基础模块1.1.1 风险的概念 核心本质：风险是对不确定性的暴露（exposure），这种不确定性既可能带来损失也可能带来收益，是危险和机遇的结合体。 与损失的区别：风险≠损失。损失是确定性事件（如100%损失1亿元），而风险具有不确定性（如50%赚1万&#x2F;50%亏1万）。 敞口概念：在金融领域常用”敞口”表示风险暴露程度，例如银行发放100万贷款，其信用风险敞口就是100万。  1.1.2 预期损失和非预期损失1. 预期损失的定义和特点 基本定义：指持仓或投资组合可能遭受的平均损失（Expected Loss, EL）。 管理特点： 可合理预测（如拉面店预计每日打翻10碗面） 已计入产品定价（40元→42元） 不构成重大威胁 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/" title="FRM学习记录">FRM学习记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-01-05T15:00:00.000Z" title="发表于 2026-01-06 00:00:00">2026-01-06</time></span></div><div class="content">2. 投资组合管理 核心理论: MPT理论: 现代投资组合理论的核心原理与有效边界 CAPM模型:  ﻿E(Ri)&#x3D;Rf+βi(E(Rm)−Rf)E(Ri​)&#x3D;Rf​+βi​(E(Rm​)−Rf​)﻿  的推导与应用 APT模型: 多因子定价机制与套利原理   学习重点: 逻辑衔接: 各模型间存在严格推导关系，需循序渐进理解 定量计算: 掌握β系数计算、组合方差公式等核心计算 实务应用: 业绩衡量指标（夏普比率、特雷诺比率等）的对比分析    2.4 现代投资组合理论和资本资产定价模型(###)2.5 业绩衡量指标(###)2.6 套利定价模型和多因子模型(###)3.  高级风险管理 数据整合: 原则: 数据标准化、系统集成、可视化呈现 输出: 风险报告的制作要点与决策支持功能   ERM体系: 核心理念: 打破风险孤岛，实现全面协同管理 实施难点: 风险偏好传导、风险限额分配、风险聚合技术    3.7 有效的数据整合和风险报告原则(#)3.8 企业风险管理(##)4. 金融危机与风险案例 案例教学: 2008危机: 次贷危机传导机制与CDO产品缺陷分析 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/07/16/2025-07-16-%E8%A1%8C%E6%B5%8B%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="行测学习记录">行测学习记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-15T15:00:00.000Z" title="发表于 2025-07-16 00:00:00">2025-07-16</time></span></div><div class="content">前言在国企考试中题型多样化，个人接触的几种为：  多数考试为 60%行测 + 40%公基  金融机构为考试为  60%行测 + 20%公基 + 20%英语  银行考试为 20%英语 + 80%公基   个人学习路线是  在行测中，言语部分即使是没有经过系统学习过，也是可以进行写，但数量没有经过系统学习，写起来会很痛苦，个人优先数量   数量（行测）-&gt; 经济（公基）  1. 行测1.1 数量跟刘文超老师的免费数量 + 蒙题 1.1.1 工程问题（重点） 刘文超老师课程P5易 高频  1. 给定时间型列表即可 2. 效率制约型如何判断题型是否是效率制约？1.工作效率比2:32.提升20% -&gt; 1:1.23.42台收割机效率为。。。。。4.&#x3D;&#x3D;某一部分&#x3D;&#x3D;工程 （甲使用5天、乙3天） -&gt; 甲：乙&#x3D;3:5 1.1.2 路程问题 刘文超老师P6难  1.上下坡&amp;往返 &#x3D;&gt; 等距离公式平均速度 &#x3D; （2 * v1 * v2）&#x2F; （v1 + v2） 1.1.3排列组合 刘文超老...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/07/13/2025-07-13-%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E8%87%AA%E8%AE%B0%E5%BD%95/" title="量化金融自记录">量化金融自记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-12T15:00:00.000Z" title="发表于 2025-07-13 00:00:00">2025-07-13</time></span></div><div class="content">前言 学习时间：180分钟专业分类：金融工程方向说明：系统必须为Windows系统  1. 学习核心经验1.1 模型训练优化经验结合实验实践，针对模型训练中易出现的结果差异大、过拟合等问题，总结核心优化经验：归一化需采用120日滚动窗口，替代本地全局统计量计算，避免未来函数导致的收益幻觉，确保线上（聚宽）与本地结果一致；统一修复公式Token序列可执行性，消除线上线下执行偏差；针对随机种子敏感性高的问题，采用多种子并行筛选方式，结合REINFORCE算法特性，缓解可行解稀疏导致的结果波动，有效提升模型稳定性。 1.2 数据类型选择经验量化分析中，数据类型的选择直接影响策略效果，结合实验实践，明确截面数据更适配Alpha因子挖掘需求，时序数据仅适用于辅助场景，核心经验及两类数据对比如下：    维度 截面数据 (Cross-Sectional) 时序数据 (Time-Series) （仅辅助）    定义 横向对比：每一天，将全市场 3000+ 只股票放在一起排名 (Ranking) 或标准化 (Z-Score)。 纵向对比：对每一只股票，将其今天的数值与自己的历史数值（如过去 3...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/05/27/2025-05-27-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%87%AA%E8%AE%B0%E5%BD%95/" title="博客搭建自记录">博客搭建自记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-05-26T15:00:00.000Z" title="发表于 2025-05-27 00:00:00">2025-05-27</time></span></div><div class="content">写这篇博客，主要是作为自己的项目搭建笔记，方便后续遇到相同报错时快速查询原因 1. 博客搭建方式选择搭建博客主要分为静态和动态两种方式，各有优劣，结合自身需求（记录笔记、低成本），最终选择了静态搭建，下面详细说说两种方式的区别和操作。 1.1 静态博客核心优势：成本为0，可免费搭建，适合个人记录、无需复杂功能的场景。 小劣势：使用免费静态平台时，访问速度会稍慢。 常用免费静态平台：Github、Cloudeflare 常用框架及搭建耗时：  Hexo：搭建约20分钟，配置约2小时  Github模板：搭建约5分钟，配置约1小时   Hexo搭建步骤自记录 下载Hexo，执行命令：  1npm install hexo-cli -g   绑定Github（SSH密钥配置）  找到本地id_ed25519.pub密钥文件，复制内容；打开Github，点击头像→Settings→SSH and GPG keys→New SSH key，填写标题，粘贴密钥即可。  验证SSH连接，执行命令：  1ssh -T git@github.com  执行后会出现服务器指纹，输入yes确认即可；若...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/05/10/2025-05-10-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="服务器学习记录">服务器学习记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-05-09T15:00:00.000Z" title="发表于 2025-05-10 00:00:00">2025-05-10</time></span></div><div class="content">    学习时间：40分钟 | 部署时间：10分钟专业分类：网络工程&#x2F;运维方向说明：本记录为本人自学笔记，非科班专业内容  学习论坛？   NodeSeek、V2EX等，更多学习建议Google搜索问题，会有许多有趣问题回答的论坛和博客。 1. VPS 初次基础设置 系统的选择都大差不差， 在创建服务器实例的时候， 记住服务器ip地址与填入的登录密钥，密钥必须是复杂的，因为弱密码必定会被扫描脚本暴力破解  1.1 链接服务器mac&#x2F;win系统自带终端，使用终端的ssh服务即可链接。也可以使用第三方的软件链接，如Termius、Xshell等。 系统自带的终端输入下面命令，会出现输入登入密钥，登入密钥输入是隐藏输入的，可通过快捷键粘贴通过root为用户名  xxx.xxx.xxx.xxx为服务器ip light1ssh root@xxx.xxx.xxx.xxx   复习 在代码中，以”#“ 开头的命令表示需要以 root 用户身份执行的命令。我们省略了 sudo 前缀，但建议你在执行这些命令时，还是使用 sudo 来提升权限。以”$“ 开头的命令表示可作为以普通...</div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://github.com/zengplus.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Zeng +</div><div class="author-info-description">个人博客，分享编程笔记和日常思考</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zengplus"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/zengplus" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/" title="FRM风险管理学习记录">FRM风险管理学习记录</a><time datetime="2026-01-06T15:00:00.000Z" title="发表于 2026-01-07 00:00:00">2026-01-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/" title="FRM学习记录">FRM学习记录</a><time datetime="2026-01-05T15:00:00.000Z" title="发表于 2026-01-06 00:00:00">2026-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/16/2025-07-16-%E8%A1%8C%E6%B5%8B%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="行测学习记录">行测学习记录</a><time datetime="2025-07-15T15:00:00.000Z" title="发表于 2025-07-16 00:00:00">2025-07-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/13/2025-07-13-%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E8%87%AA%E8%AE%B0%E5%BD%95/" title="量化金融自记录">量化金融自记录</a><time datetime="2025-07-12T15:00:00.000Z" title="发表于 2025-07-13 00:00:00">2025-07-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/27/2025-05-27-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%87%AA%E8%AE%B0%E5%BD%95/" title="博客搭建自记录">博客搭建自记录</a><time datetime="2025-05-26T15:00:00.000Z" title="发表于 2025-05-27 00:00:00">2025-05-27</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/FRM/" style="font-size: 1.5em; color: #99a9bf">FRM</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 1.1em; color: #999">服务器</a> <a href="/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" style="font-size: 1.1em; color: #999">量化金融</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/%E8%A1%8C%E6%B5%8B/" style="font-size: 1.1em; color: #999">行测</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              一月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              七月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/05/">
+            <span class="card-archive-list-date">
+              五月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-18T10:02:59.674Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Zeng +</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,1828 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>FRM风险管理学习记录 | Zeng +</title><meta name="author" content="Zeng +"><meta name="copyright" content="Zeng +"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="高顿 FRM一级20% 1. 风险管理基础知识(##) 模块特点: 定性理解为主，重要程度较低（1-2星） 学习要点: 风险定义: 区分风险与不确定性的本质区别 分类体系: 掌握市场风险、信用风险、操作风险等主要风险类别 管理流程: 从识别到监控的完整风险管理生命周期 治理架构: 董事会、风险管理委员会等治理主体的职责划分    1.1  风险管理基础模块1.1.1 风险的概念 核心本质：风险是对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FRM风险管理学习记录">
+<meta property="og:url" content="https://zengplus.github.io/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Zeng +">
+<meta property="og:description" content="高顿 FRM一级20% 1. 风险管理基础知识(##) 模块特点: 定性理解为主，重要程度较低（1-2星） 学习要点: 风险定义: 区分风险与不确定性的本质区别 分类体系: 掌握市场风险、信用风险、操作风险等主要风险类别 管理流程: 从识别到监控的完整风险管理生命周期 治理架构: 董事会、风险管理委员会等治理主体的职责划分    1.1  风险管理基础模块1.1.1 风险的概念 核心本质：风险是对">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/zengplus.png">
+<meta property="article:published_time" content="2026-01-06T15:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-18T09:48:02.307Z">
+<meta property="article:author" content="Zeng +">
+<meta property="article:tag" content="FRM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/zengplus.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "FRM风险管理学习记录",
+  "url": "https://zengplus.github.io/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/",
+  "image": "https://github.com/zengplus.png",
+  "datePublished": "2026-01-06T15:00:00.000Z",
+  "dateModified": "2026-03-18T09:48:02.307Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zeng +",
+      "url": "https://zengplus.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://zengplus.github.io/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'FRM风险管理学习记录',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/home.jpeg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Zeng +</span></a><a class="nav-page-title" href="/"><span class="site-name">FRM风险管理学习记录</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">FRM风险管理学习记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-06T15:00:00.000Z" title="发表于 2026-01-07 00:00:00">2026-01-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-03-18T09:48:02.307Z" title="更新于 2026-03-18 18:48:02">2026-03-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>高顿</p>
+<p>FRM一级20%</p>
+<h1 id="1-风险管理基础知识"><a href="#1-风险管理基础知识" class="headerlink" title="1. 风险管理基础知识(##)"></a>1. 风险管理基础知识(##)</h1><ul>
+<li>模块特点: 定性理解为主，重要程度较低（1-2星）</li>
+<li>学习要点:<ul>
+<li>风险定义: 区分风险与不确定性的本质区别</li>
+<li>分类体系: 掌握市场风险、信用风险、操作风险等主要风险类别</li>
+<li>管理流程: 从识别到监控的完整风险管理生命周期</li>
+<li>治理架构: 董事会、风险管理委员会等治理主体的职责划分</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-1-风险管理基础模块"><a href="#1-1-风险管理基础模块" class="headerlink" title="1.1  风险管理基础模块"></a>1.1  风险管理基础模块</h2><h3 id="1-1-1-风险的概念"><a href="#1-1-1-风险的概念" class="headerlink" title="1.1.1 风险的概念"></a>1.1.1 风险的概念</h3><ul>
+<li>核心本质：风险是对不确定性的暴露（exposure），这种不确定性既可能带来损失也可能带来收益，是危险和机遇的结合体。</li>
+<li>与损失的区别：风险≠损失。损失是确定性事件（如100%损失1亿元），而风险具有不确定性（如50%赚1万&#x2F;50%亏1万）。</li>
+<li>敞口概念：在金融领域常用”敞口”表示风险暴露程度，例如银行发放100万贷款，其信用风险敞口就是100万。</li>
+</ul>
+<h3 id="1-1-2-预期损失和非预期损失"><a href="#1-1-2-预期损失和非预期损失" class="headerlink" title="1.1.2 预期损失和非预期损失"></a>1.1.2 预期损失和非预期损失</h3><h4 id="1-预期损失的定义和特点"><a href="#1-预期损失的定义和特点" class="headerlink" title="1. 预期损失的定义和特点"></a>1. 预期损失的定义和特点</h4><ul>
+<li>基本定义：指持仓或投资组合可能遭受的平均损失（Expected Loss, EL）。<ul>
+<li>管理特点：<ul>
+<li>可合理预测（如拉面店预计每日打翻10碗面）</li>
+<li>已计入产品定价（40元→42元）</li>
+<li>不构成重大威胁</li>
+</ul>
+</li>
+<li>金融实例：银行贷款利率在无风险利率2%基础上加3.5%信用利差，最终报价5.5%包含预期损失。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-非预期损失的定义和特点"><a href="#2-非预期损失的定义和特点" class="headerlink" title="2. 非预期损失的定义和特点"></a>2. 非预期损失的定义和特点</h4><ul>
+<li>基本定义：超出正常业务范围的损失（如自然灾害、多重不利事件同时发生）。<ul>
+<li>典型特征：<ul>
+<li>难以预测评估（如2020年疫情导致股债双杀+黄金贬值）</li>
+<li>超出日常经营范畴（拉面店遭遇海啸）</li>
+</ul>
+</li>
+<li>管理方法：通过风险资本（Capital）建立缓冲，吸收意外损失。</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-两类损失对比"><a href="#3-两类损失对比" class="headerlink" title="3. 两类损失对比"></a>3. 两类损失对比</h4><ul>
+<li>预期损失：通过产品定价转移（如贷款利率包含坏账准备）</li>
+<li>非预期损失：通过资本金覆盖（如银行持有风险资本应对极端情况）</li>
+</ul>
+<h3 id="1-1-3-风险管理和风险承担"><a href="#1-1-3-风险管理和风险承担" class="headerlink" title="1.1.3 风险管理和风险承担"></a>1.1.3 风险管理和风险承担</h3><ul>
+<li>核心逻辑：风险与收益正相关，追求高回报需承担更高风险。</li>
+<li>管理本质：<ul>
+<li>不是消除所有风险（零风险&#x3D;无风险收益）</li>
+<li>是主动选择适合自身的风险类型和水平</li>
+</ul>
+</li>
+<li>风险承担：<ul>
+<li>与风险管理是硬币两面</li>
+<li>企业扩张期（如瑞幸快速开店）需要更高风险承受力</li>
+<li>保守策略可选择低风险低收益方案</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-1-4-风险管理过程"><a href="#1-1-4-风险管理过程" class="headerlink" title="1.1.4 风险管理过程"></a>1.1.4 风险管理过程</h3><h4 id="1-风险识别"><a href="#1-风险识别" class="headerlink" title="1. 风险识别"></a>1. 风险识别</h4><ul>
+<li>基本流程：风险管理的第一步，包括定义风险、分类风险（如信用风险、市场风险、流动性风险、操作风险等）和理解风险事件。<ul>
+<li>损失类型：<ul>
+<li>预期损失：可以预料到的损失，通过定价进行管理</li>
+<li>非预期损失：预料不到但考虑到的损失，通过资本金进行吸收</li>
+<li>未知风险：包括两种类型：<ul>
+<li>奈特式不确定性：无法测量的不确定性，知道可能发生但无法量化其分布（如核战争发生的概率）</li>
+<li>未知的未知：完全出乎意料的风险，会吞噬预留资金（如银行未意识到的角落风险）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>核心难点：真正的风险往往以完全出乎意料的方式突然上升，或某种成本会凭空出现并吞噬预留资金。</li>
+</ul>
+<h4 id="2-风险管理"><a href="#2-风险管理" class="headerlink" title="2. 风险管理"></a>2. 风险管理</h4><ul>
+<li>四大策略：<ul>
+<li>避免风险：<ul>
+<li>通过终止业务或采用不同策略规避风险（如因政治风险不在某地建厂）</li>
+</ul>
+</li>
+<li>保留风险：<ul>
+<li>在企业风险承受范围内接受风险，通过风险资本分配、自保和专属保险等机制承担（如金融机构整体视角下的天然对冲）</li>
+</ul>
+</li>
+<li>降低风险：<ul>
+<li>减少风险敞口（暴露）</li>
+<li>降低发生频率（如优化交易流程增加确认环节）</li>
+<li>减轻损失严重程度（如收取抵押品）</li>
+<li>对冲风险敞口（使用金融衍生工具进行套期保值）</li>
+</ul>
+</li>
+<li>转移风险：<ul>
+<li>使用衍生产品（如信用违约互换）</li>
+<li>结构化产品</li>
+<li>支付保费方式转移给第三方（如保险公司、衍生品提供商）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-2-风险分类"><a href="#1-2-风险分类" class="headerlink" title="1.2 风险分类"></a>1.2 风险分类</h2><h3 id="1-2-1-市场风险"><a href="#1-2-1-市场风险" class="headerlink" title="1.2.1 市场风险"></a>1.2.1 市场风险</h3><ul>
+<li><p>定义与分类</p>
+<ul>
+<li>核心定义：由于市场价格和利率不断变化，推动证券和其他资产的价值上下波动。</li>
+<li>价格不确定性：市场风险的本质是价格的不确定性，表现为股票、债券、商品、外汇等资产价格的波动。</li>
+<li>标的资产：价格波动程度取决于标的资产的表现，衍生品价格变化也由其标的资产决定（如林娜贝尔IP周边产品的价值取决于IP本身受欢迎程度）。</li>
+<li>分类：<ul>
+<li>一般市场风险：某一资产类别整体价值下跌导致个别资产或投资组合价值下跌（如股灾时个股随大盘下跌）。</li>
+<li>特定市场风险：个别资产价值下降幅度大于所属资产类别的整体跌幅（如某公司业绩暴雷导致股价暴跌而大盘平稳）。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>主要资产类型风险</p>
+<ul>
+<li>股权价格风险：股票价格的不确定性（如个股波动或系统性股灾）。</li>
+<li>利率风险：利率变化对债券等资产的影响（如加息导致国债价格下跌）。</li>
+<li>外汇风险：汇率波动带来的风险（因地缘政治等因素导致）。</li>
+<li>商品价格风险：大宗商品价格波动（如2020年3月原油价格暴跌）。</li>
+</ul>
+</li>
+<li><p>市场风险管理</p>
+<ul>
+<li>对冲工具：使用金融衍生工具抵消现有组合的价值波动。</li>
+<li>分散化投资：<ul>
+<li>原理：通过构建相关性低或负相关的资产组合降低风险（”不要把鸡蛋放在同一个篮子里”）。</li>
+<li>头寸关系：组合中多头头寸（买入资产）和空头头寸（卖出资产）的配置需考虑资产间相关性。</li>
+<li>效果：当组合内资产价格变化呈现低相关性或负相关性时（如一涨一跌），可实现风险分散。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-2-信用风险"><a href="#1-2-2-信用风险" class="headerlink" title="1.2.2 信用风险"></a>1.2.2 信用风险</h3><ul>
+<li><p>信用风险定义</p>
+<ul>
+<li>核心概念：源于一方未能履行其对另一方的财务义务</li>
+<li>银行业背景：传统商业银行通过”低息吸储-高息放贷”模式运营，放贷时需评估借款人信用质量</li>
+<li>义务本质：合约双方必须履行的责任，包括借贷合约和金融衍生工具合约</li>
+</ul>
+</li>
+<li><p>违约风险 </p>
+<ul>
+<li>狭义定义：债务人未能按时支付贷款利息或本金</li>
+<li>法律后果：可能导致破产程序</li>
+<li>主体区分：<ul>
+<li>债务人：资金借入方，有还本付息义务</li>
+<li>债权人：资金借出方</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>降级风险</p>
+<ul>
+<li>动态特征：债务人信用质量随时间恶化但尚未违约</li>
+<li>评级机制：第三方信用评级机构评估（如从AAA降至A级）</li>
+<li>市场影响：会导致相关证券即时价值损失（例：债券价格从101跌至98）</li>
+<li>关键过程：信用评级是公开发行债券的必要程序</li>
+</ul>
+</li>
+<li><p>交易对手风险 </p>
+<ul>
+<li>衍生品特征：主要存在于场外衍生品交易中</li>
+<li>特殊表现：合约一方因亏损可能拒绝履约</li>
+<li>子类型：<ul>
+<li>结算风险：外汇互换等交易中因时差导致的单方履约</li>
+</ul>
+</li>
+<li>历史教训：存在多个典型案例（后续课程展开）</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-3-操作风险"><a href="#1-2-3-操作风险" class="headerlink" title="1.2.3 操作风险"></a>1.2.3 操作风险</h3><ul>
+<li><p>操作风险定义</p>
+<ul>
+<li>巴塞尔定义：由于非金融问题导致的损失风险</li>
+<li>三大来源：<ul>
+<li>内部流程缺陷</li>
+<li>人员&#x2F;系统问题</li>
+<li>外部事件影响</li>
+</ul>
+</li>
+<li>监管背景：国际银行业通用监管标准</li>
+</ul>
+</li>
+<li><p>操作风险类型</p>
+<ul>
+<li>风险范畴：除市场、信用、流动性风险外的”剩余风险”</li>
+<li>典型示例：<ul>
+<li>内部欺诈（如员工盗窃）</li>
+<li>外部欺诈（信用卡盗刷）</li>
+<li>自然灾害（海啸损毁分支机构）</li>
+<li>系统风险（黑客攻击）</li>
+<li>流程风险（柜台授权漏洞）</li>
+</ul>
+</li>
+<li>特殊包含：法律风险属于操作风险</li>
+<li>明确排除：商业风险、战略风险、声誉风险不属于操作风险</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-3-流动性风险"><a href="#1-2-3-流动性风险" class="headerlink" title="1.2.3 流动性风险"></a>1.2.3 流动性风险</h3><ul>
+<li>定义：用于描述两种完全不同的风险：市场流动性风险和融资流动性风险。</li>
+</ul>
+<h4 id="1-市场流动性风险"><a href="#1-市场流动性风险" class="headerlink" title="1. 市场流动性风险"></a>1. 市场流动性风险</h4><ul>
+<li>核心特征：当市场流动性枯竭时，资产价值可能出现损失的风险。</li>
+<li>判断标准：用”快速公允变现”六个字衡量：<ul>
+<li>快速：能在短时间内完成交易</li>
+<li>公允：能以接近市场价值的价格成交</li>
+<li>变现：能转换为现金</li>
+</ul>
+</li>
+<li>典型例子：<ul>
+<li>房地产：无法同时满足快速和公允两个条件</li>
+<li>流动性差的资产：在市场枯竭时价值会大幅折损</li>
+</ul>
+</li>
+<li>适用对象：主要描述单一资产的流动性特征</li>
+</ul>
+<h4 id="2-融资流动性风险"><a href="#2-融资流动性风险" class="headerlink" title="2. 融资流动性风险"></a>2. 融资流动性风险</h4><ul>
+<li>核心特征：实体因缺乏足够现金或高流动性资产，无法按时偿还到期债务或进行再融资的风险。</li>
+<li>适用对象：描述金融机构或企业的整体资金状况</li>
+<li>典型案例：<ul>
+<li>2020年疫情期间健身房倒闭：收入中断但固定支出持续</li>
+<li>银行挤兑现象：储户集中取款导致资金链断裂</li>
+</ul>
+</li>
+<li>银行业务特性：<ul>
+<li>期限错配：短期负债（存款）对应长期资产（贷款）</li>
+<li>资金错配：低息吸储（﻿R低R低​﻿短）对应高息放贷（﻿R高R高​﻿长）</li>
+<li>盈利模式：通过息差获利，但承担相应风险</li>
+</ul>
+</li>
+</ul>
+<h5 id="1）商业银行运营机制"><a href="#1）商业银行运营机制" class="headerlink" title="1）商业银行运营机制"></a>1）商业银行运营机制</h5><ul>
+<li>负债端：<ul>
+<li>存款属于银行负债（资金来源于储户）</li>
+<li>期限较短（活期&#x2F;1-5年定存）</li>
+</ul>
+</li>
+<li>资产端：<ul>
+<li>贷款属于银行资产（资金投向）</li>
+<li>期限较长（如房贷可达20-30年）</li>
+</ul>
+</li>
+<li>风险传导：<ul>
+<li>挤兑发生时：短期负债需立即偿付</li>
+<li>资产端无法快速变现（贷款回收周期长）</li>
+<li>再融资困难时即出现流动性危机</li>
+</ul>
+</li>
+</ul>
+<h5 id="2）实际案例分析"><a href="#2）实际案例分析" class="headerlink" title="2）实际案例分析"></a>2）实际案例分析</h5><ul>
+<li>射阳银行事件：<ul>
+<li>起因：谣言导致储户集中取款</li>
+<li>应对措施：同业资金调配进行再融资</li>
+<li>结果：两周后危机解除（实为乌龙事件）</li>
+</ul>
+</li>
+<li>行业特性：<ul>
+<li>期限错配是商业银行固有经营模式</li>
+<li>需通过风险管理平衡收益与风险</li>
+</ul>
+</li>
+<li>体系定位：流动性风险与市场、信用、操作风险并列为四大核心风险</li>
+<li>其他风险：战略风险、声誉风险等更多通过定性管理</li>
+</ul>
+<h3 id="1-2-4-其他风险"><a href="#1-2-4-其他风险" class="headerlink" title="1.2.4 其他风险"></a>1.2.4 其他风险</h3><h4 id="1-商业风险"><a href="#1-商业风险" class="headerlink" title="1. 商业风险"></a>1. 商业风险</h4><ul>
+<li>核心特征：是企业日常运营中必然面临的基础风险，涉及公司所有业务环节</li>
+<li>具体表现：<ul>
+<li>客户需求管理（如产品定位决策）</li>
+<li>定价策略制定（如小米汽车对标特斯拉或低价策略的选择）</li>
+<li>供应链谈判（与上下游供应商的议价能力）</li>
+<li>产品创新管理（新产品研发与迭代）</li>
+</ul>
+</li>
+<li>学科关联：通常在MBA等商业管理课程中深入探讨</li>
+</ul>
+<h4 id="2-战略风险"><a href="#2-战略风险" class="headerlink" title="2. 战略风险"></a>2. 战略风险</h4><ul>
+<li>决策特征：涉及企业重大发展方向的长周期决策（如小米造车历时3年的战略决策）</li>
+<li>资源投入：<ul>
+<li>资本投入（北京自建工厂的巨额投资）</li>
+<li>人力资源配置（专业团队组建）</li>
+<li>管理声誉（雷军个人声誉与企业品牌绑定）</li>
+</ul>
+</li>
+<li>典型案例：小米从手机组装转向汽车制造的完整产业链布局决策</li>
+</ul>
+<h4 id="3-声誉风险"><a href="#3-声誉风险" class="headerlink" title="3. 声誉风险"></a>3. 声誉风险</h4><ul>
+<li>本质特征：市场地位或品牌价值的突发性下滑带来的经济损失</li>
+<li>典型后果：<ul>
+<li>客户流失（大众汽车排放门事件）</li>
+<li>交易对手终止合作</li>
+<li>实体可信度丧失（四大会计师事务所审计权威性）</li>
+</ul>
+</li>
+<li>行业案例：<ul>
+<li>普华永道审计丑闻导致”五大”变”四大”的历史教训</li>
+<li>金融机构核心经营要素实质是声誉与信任</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-5-风险的相互作用"><a href="#1-2-5-风险的相互作用" class="headerlink" title="1.2.5 风险的相互作用"></a>1.2.5 风险的相互作用</h3><h4 id="1-风险分类与相互作用概述"><a href="#1-风险分类与相互作用概述" class="headerlink" title="1. 风险分类与相互作用概述"></a>1. 风险分类与相互作用概述</h4><ul>
+<li>管理哲学：不同风险类型需要差异化管控方法（市场&#x2F;信用风险vs操作风险）</li>
+<li>流动特征：各类风险存在传导效应（如流动性风险→信用风险→市场风险）</li>
+</ul>
+<h4 id="2-例题1-健身房风险案例分析"><a href="#2-例题1-健身房风险案例分析" class="headerlink" title="2. 例题1:健身房风险案例分析"></a>2. 例题1:健身房风险案例分析</h4><ul>
+<li>风险传导路径：<ul>
+<li>疫情导致收入中断→融资流动性风险</li>
+<li>健身器材难以快速变现→市场流动性风险</li>
+<li>拖欠房租→信用风险（违约）</li>
+<li>器材抛售价格下跌→市场风险</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-信用风险：违约、降级与交易对手风险"><a href="#3-信用风险：违约、降级与交易对手风险" class="headerlink" title="3. 信用风险：违约、降级与交易对手风险"></a>3. 信用风险：违约、降级与交易对手风险</h4><ul>
+<li>违约风险：债务人无法按期偿还本息（健身房拖欠房租）</li>
+<li>降级风险：信用评级下调引发的连锁反应</li>
+<li>交易对手风险：衍生品交易中的履约风险</li>
+</ul>
+<h4 id="4-市场风险与分散化投资"><a href="#4-市场风险与分散化投资" class="headerlink" title="4. 市场风险与分散化投资"></a>4. 市场风险与分散化投资</h4><ul>
+<li>价格波动：资产价值受市场供需影响（健身器材抛售价持续走低）</li>
+<li>管理工具：通过投资组合分散化降低风险敞口</li>
+</ul>
+<h4 id="5-风险管理与回报"><a href="#5-风险管理与回报" class="headerlink" title="5. 风险管理与回报"></a>5. 风险管理与回报</h4><ul>
+<li>正向关系：<ul>
+<li>市场风险（自营交易收益）</li>
+<li>信用风险（贷款利息收入）</li>
+</ul>
+</li>
+<li>特殊案例：<ul>
+<li>操作风险（如信用卡盗刷）不会带来额外收益</li>
+<li>银行通过流程优化主动规避操作风险</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-2-6-内容总结"><a href="#1-2-6-内容总结" class="headerlink" title="1.2.6 内容总结"></a>1.2.6 内容总结</h4><ul>
+<li>本质定义：风险是对不确定性的暴露，包含损失与收益双重可能</li>
+<li>损失分类：<ul>
+<li>预期损失（通过定价转移，如贷款坏账准备）</li>
+<li>非预期损失（需资本金覆盖）</li>
+</ul>
+</li>
+<li>管理循环：<ul>
+<li>风险识别（定义与分类）</li>
+<li>风险分析（量化评估）</li>
+<li>风险评估（影响分析）</li>
+<li>风险管理（规避&#x2F;转移策略）</li>
+<li>风险评价（效果反馈）</li>
+</ul>
+</li>
+<li>考试重点：场景化识别各类风险（如价格波动→市场风险，违约→信用风险）</li>
+<li>基础特性：本章为定性知识铺垫，需建立风险管理的整体认知框架</li>
+</ul>
+<h2 id="1-3-风险衡量"><a href="#1-3-风险衡量" class="headerlink" title="1.3 风险衡量"></a>1.3 风险衡量</h2><h3 id="1-3-1-风险衡量和管理"><a href="#1-3-1-风险衡量和管理" class="headerlink" title="1.3.1 风险衡量和管理"></a>1.3.1 风险衡量和管理</h3><h5 id="1-衡量风险"><a href="#1-衡量风险" class="headerlink" title="1. 衡量风险"></a>1. 衡量风险</h5><p>﻿</p>
+<h6 id="1）定量衡量"><a href="#1）定量衡量" class="headerlink" title="1）定量衡量"></a>1）定量衡量</h6><p>﻿</p>
+<ul>
+<li><p>敏感性风险衡量 </p>
+<ul>
+<li><p>核心概念: 通过量化指标反映资产价格对特定风险因子的敏感程度</p>
+</li>
+<li><p>特点:</p>
+<ul>
+<li>提供具体数值化的风险度量</li>
+<li>适用于单个资产或资产类别的风险分析</li>
+<li>不同资产类别的敏感性指标不可直接相加</li>
+</ul>
+</li>
+<li><p>股票敞口衡量：贝塔值 </p>
+<ul>
+<li>定义: 衡量个股对大盘变动的敏感程度(β)</li>
+<li>计算示例: 当β&#x3D;1.5﻿时，表示大盘上涨1%，个股平均上涨1.5%</li>
+<li>应用场景:<ul>
+<li>用于分析个股价格的不确定性</li>
+<li>股票分析软件常直接提供该指标</li>
+<li>反映个股相对于系统风险的暴露程度</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>固定收益敞口衡量：久期和凸度 ﻿</p>
+<ul>
+<li>适用对象: 主要针对债券类固定收益产品</li>
+<li>作用机制:<ul>
+<li>反映债券价格对利率变化的敏感程度</li>
+<li>久期衡量一阶利率敏感性</li>
+<li>凸度衡量二阶利率敏感性</li>
+</ul>
+</li>
+<li>学习安排: 将在第四门课程《估值与风险模型》中详细讲解</li>
+</ul>
+</li>
+<li><p>期权风险衡量：希腊字母 </p>
+<ul>
+<li>组成要素: 包括Delta、Gamma、Vega、Rho、Theta等</li>
+<li>功能特点:<ul>
+<li>反映期权价格对各种风险因子的敏感性</li>
+<li>每个希腊字母对应不同风险源</li>
+<li>需先掌握期权估值才能深入理解</li>
+</ul>
+</li>
+<li>课程安排: 在第三门课程《金融市场与产品》中系统讲解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>组合加总 </p>
+<p>  ﻿</p>
+<ul>
+<li>现实挑战:<ul>
+<li>金融机构通常持有跨资产类别的投资组合</li>
+<li>不同敏感性指标无法直接相加</li>
+<li>高层管理者需要整体风险视图</li>
+</ul>
+</li>
+<li>解决方案需求:<ul>
+<li>需要开发统一的风险加总方法</li>
+<li>摩根大通最早推动相关指标开发</li>
+<li>最终催生了VaR方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>在险价值VaR：风险整合衡量 </p>
+<ul>
+<li>全称: Value at Risk (风险价值&#x2F;在险价值)</li>
+<li>核心定义: 在给定持有期和置信水平下，预期不会超过的损失</li>
+<li>三要素:<ul>
+<li>时间跨度(如1天、10天)</li>
+<li>置信水平(如95%、99%)</li>
+<li>损失金额(具体数值)</li>
+</ul>
+</li>
+<li>典型示例:<ul>
+<li>某组合5% VaR为220万欧元(1天)</li>
+<li>含义1: 5%概率下最小损失≥220万</li>
+<li>含义2: 95%概率下最大损失≤220万</li>
+</ul>
+</li>
+<li>实务优势:<ul>
+<li>实现跨资产类别的风险加总</li>
+<li>为高层提供简洁的风险视图</li>
+<li>可直接比较不同业务单元风险</li>
+</ul>
+</li>
+<li>历史背景:<ul>
+<li>源自摩根大通的风险管理需求</li>
+<li>解决传统敏感性指标过多的问题</li>
+<li>现已成为行业标准风险指标</li>
+</ul>
+</li>
+<li>学习安排:<ul>
+<li>将在第四门课程用三章详细讲解</li>
+<li>FRM二级市场风险部分深入探讨</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="2）定性衡量"><a href="#2）定性衡量" class="headerlink" title="2）定性衡量"></a>2）定性衡量</h6><p>﻿</p>
+<ul>
+<li>风险因素分解<ul>
+<li>核心作用：将风险分解为关键风险因素是风险管理的关键活动，需要理解各因素的重要性及其相互关系</li>
+<li>分解目的：既分析单个风险因素，又考察其与更广泛商业环境的关联性</li>
+<li>典型示例：信用风险可分解为：<ul>
+<li>违约概率(PD)：借款人未来一年内违约的可能性（如2%）</li>
+<li>违约损失率(LGD)：违约后实际损失比例（如500万贷款回收200万，则LGD&#x3D;60%）</li>
+<li>风险敞口(EAD)：可能面临损失的最大金额（如贷款本金500万）</li>
+</ul>
+</li>
+<li>方法论特点：风险分解与加总在风险管理中同等重要，二者相辅相成</li>
+</ul>
+</li>
+</ul>
+<h6 id="3）系统性危机"><a href="#3）系统性危机" class="headerlink" title="3）系统性危机"></a>3）系统性危机</h6><p>﻿</p>
+<ul>
+<li>基本概念<ul>
+<li>本质特征：当系统底层结构发生根本性变化时产生的风险</li>
+<li>关键表现：<ul>
+<li>风险水平显著增加</li>
+<li>可能出现全新类型的损失来源</li>
+</ul>
+</li>
+<li>典型案例：2007-2009年全球金融危机（由次级抵押贷款引发）</li>
+<li>系统关联性：强调”覆巢之下无完卵”效应，整个金融体系崩溃时单个机构难以独善其身</li>
+</ul>
+</li>
+<li>与尾部风险的对比<ul>
+<li>考察重点：需区分系统性危机与尾部风险事件<ul>
+<li>系统性危机：系统结构变化导致的全局性风险</li>
+<li>尾部风险：极端但非系统性的小概率事件</li>
+</ul>
+</li>
+<li>考试重要性：两类风险对比是常见考点，曾在重要考试中出现</li>
+</ul>
+</li>
+</ul>
+<h6 id="4）尾部风险事件"><a href="#4）尾部风险事件" class="headerlink" title="4）尾部风险事件"></a>4）尾部风险事件</h6><p>﻿
+﻿</p>
+<ul>
+<li><p>尾部风险事件的定义</p>
+<ul>
+<li>罕见性特征: 指由于发生概率极低但可能造成重大损失的事件，类似”林子大了什么鸟都有”现象，在长期观测中必然出现极端情况</li>
+<li>系统稳定性前提: 强调事件发生时整体金融体系结构仍保持稳定，如森林生态系统未改变却出现罕见鸟类</li>
+<li>复杂系统表现: 在金融等复杂系统中，即使结构稳定，长时间维度下仍可能发生概率小于0.1%的极端事件</li>
+</ul>
+</li>
+<li><p>极值理论(EVT) </p>
+<ul>
+<li>理论功能: 通过单独建模收益分布的尾部，使罕见风险可视化，在二级市场风险中会深入讲解具体建模方法</li>
+<li>应用层级: 一级只需掌握EVT是研究尾部风险的工具，二级将涉及具体建模技术</li>
+<li>类比解释: 如同鸟类学家长期观察记录罕见鸟类出现规律，EVT通过统计方法捕捉极端值的分布特征</li>
+</ul>
+</li>
+<li><p>系统性危机的定义 </p>
+<ul>
+<li>结构性质变: 当系统底层规则发生根本变化时产生，如金融体系信贷审核标准崩塌（次贷危机）</li>
+<li>新生风险源: 会产生传统风险类型之外的全新损失来源，如证券化产品导致的道德风险</li>
+<li>英语术语: Systemic Crisis特指金融系统崩溃，区别于一般系统性(systematic)风险</li>
+</ul>
+</li>
+<li><p>案例：2007-2009年全球金融危机 </p>
+<ul>
+<li>触发机制: 资产证券化使银行放弃信贷标准，向无收入、无资产、无保险的”三无”借款人发放次级贷款</li>
+<li>传导路径: 美国本土次贷违约→抵押贷款证券(MBS)崩盘→全球金融海啸</li>
+<li>结构改变: 传统银行”持有至到期”模式变为”发起-分销”模式，彻底改变金融体系风险承担机制</li>
+</ul>
+</li>
+<li><p>尾部风险事件与系统性危机的区别 </p>
+<ul>
+<li>本质差异:<ul>
+<li>尾部风险: 系统结构不变下的统计现象（观察到的怪鸟增多）</li>
+<li>系统性危机: 系统规则重构（森林火灾改变生态结构）</li>
+</ul>
+</li>
+<li>发生概率: 两者都属低频事件，但系统性危机伴随制度性缺陷</li>
+<li>影响范围: 尾部风险通常局部，系统性危机必然全局传导</li>
+</ul>
+</li>
+<li><p>风险的定量衡量 </p>
+<ul>
+<li>敏感性指标: 包括β系数、久期、凸度等希腊字母度量</li>
+<li>聚合性指标: 如VaR（在险价值）提供损失上限估计</li>
+<li>输出形式: 最终表现为具体数值（如”组合VaR&#x3D;500万美元”）</li>
+</ul>
+</li>
+<li><p>风险的定性衡量 </p>
+<ul>
+<li>情景分析: 设定特定经济场景（如滞胀）评估机构生存能力</li>
+<li>压力测试: 情景分析的特殊形式，将所有参数调至极端状态</li>
+<li>监管应用: 银行业强制压力测试，结果不合格需立即整改资本计划</li>
+</ul>
+</li>
+<li><p>例题1:情景分析 </p>
+<ul>
+<li>典型场景: 高通胀+低GDP增长+流动性枯竭</li>
+<li>分析要点:<ul>
+<li>评估机构在滞胀环境下的现金流持续性</li>
+<li>检验抵押品价值恶化程度</li>
+<li>监控交叉违约触发可能性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>例题2:压力测试 </p>
+<ul>
+<li>极端设定:<ul>
+<li>GDP负增长10%</li>
+<li>失业率25%</li>
+<li>房价下跌50%</li>
+</ul>
+</li>
+<li>类比解释: 相当于金融版的”荒岛求生测试”</li>
+<li>监管标准: 巴塞尔协议III要求银行进行反向压力测试（从破产结果反推）</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-4-风险管理"><a href="#1-4-风险管理" class="headerlink" title="1.4 风险管理"></a>1.4 风险管理</h2><h5 id="三道防线"><a href="#三道防线" class="headerlink" title="三道防线"></a>三道防线</h5><h6 id="1）代理问题与利益冲突的产生"><a href="#1）代理问题与利益冲突的产生" class="headerlink" title="1）代理问题与利益冲突的产生"></a>1）代理问题与利益冲突的产生</h6><ul>
+<li>典型表现：股东委托高管管理公司时，高管可能为自身利益做出损害银行的行为（如CEO&#x2F;CRO决策与股东长期目标不一致）</li>
+<li>风险操纵隐患：最了解风险产生和管理机制的人（如前台+后台双重管理者）往往处于最佳风险操纵位置，典型案例包括上世纪交易员同时管理交易和风控部门</li>
+<li>部门冲突根源：不同部门薪酬体系差异和业务流程交叉会导致利益冲突，例如信贷审批部门与业务部门的考核目标矛盾</li>
+</ul>
+<h6 id="2）三道防线的概述"><a href="#2）三道防线的概述" class="headerlink" title="2）三道防线的概述"></a>2）三道防线的概述</h6><ul>
+<li>设计原理：通过业务线→风控部门→内部审计的三层过滤机制，将不适宜承担的风险逐级拦截</li>
+<li>动态防御体系：风险需依次通过三道关卡的审查判断，而非一次性评估</li>
+</ul>
+<h6 id="3）第一道防线：业务线"><a href="#3）第一道防线：业务线" class="headerlink" title="3）第一道防线：业务线"></a>3）第一道防线：业务线</h6><p>﻿</p>
+<ul>
+<li>双重角色：既是利润创造主体（如对公客户经理发放贷款），也是风险初始识别者（履行授信调查职责）</li>
+<li>日常管理内容：包括但不限于零售客户经理推广理财产品时的客户风险识别、柜面业务操作授权控制</li>
+<li>典型拦截案例：客户经理发现企业财务问题后拒绝贷款申请，将信用风险阻挡在业务入口处</li>
+</ul>
+<h6 id="4）第二道防线：风险管理人员"><a href="#4）第二道防线：风险管理人员" class="headerlink" title="4）第二道防线：风险管理人员"></a>4）第二道防线：风险管理人员</h6><ul>
+<li>核心职能：专业化风险管理（信用评级设定、授信标准制定）和持续性监督（贷款集中度监控、逾期率分析）</li>
+<li>风险承接逻辑：不是消除风险，而是判断风险类型&#x2F;量级是否符合银行风险偏好，例如审查业务部门提交的授信方案</li>
+</ul>
+<h6 id="5）第三道防线：内部审计"><a href="#5）第三道防线：内部审计" class="headerlink" title="5）第三道防线：内部审计"></a>5）第三道防线：内部审计</h6><ul>
+<li>独立监督机制：定期审查模型验证、流程合规性、人员胜任能力等，如检查授信审批流程是否存在漏洞</li>
+<li>保证功能：对前两道防线的工作质量提供第三方认证，相当于银行治理的”质量检测部门”</li>
+</ul>
+<h6 id="6）三道防线层层防御的意义"><a href="#6）三道防线层层防御的意义" class="headerlink" title="6）三道防线层层防御的意义"></a>6）三道防线层层防御的意义</h6><ul>
+<li>流程优化价值：避免单一部门决策偏差（如业务部门过度追求业绩而忽视风险）</li>
+<li>风险文化塑造：通过分级审查培养全员风险意识，例如柜员操作时自觉执行双人授权制度</li>
+</ul>
+<h5 id="2-风险与回报的平衡"><a href="#2-风险与回报的平衡" class="headerlink" title="2. 风险与回报的平衡"></a>2. 风险与回报的平衡</h5><h6 id="1）风险调整的资本回报率"><a href="#1）风险调整的资本回报率" class="headerlink" title="1）风险调整的资本回报率"></a>1）风险调整的资本回报率</h6><ul>
+<li><p>核心公式：</p>
+<p>  ﻿RAROC&#x3D;风险调整后税后净收益经济资本RAROC&#x3D;经济资本风险调整后税后净收益​﻿</p>
+<p>  ，衡量单位风险资本创造的收益</p>
+</li>
+<li><p>资本类型区分：</p>
+<ul>
+<li>经济资本：银行内部评估的非预期损失吸收资本（如某部门风险模型计算结果）</li>
+<li>监管资本：按巴塞尔协议规则计算的法定资本要求</li>
+</ul>
+</li>
+<li><p>管理应用：</p>
+<ul>
+<li>横向比较：对比不同部门&#x2F;业务线的RAROC值（如信用卡部vs投资银行部）</li>
+<li>项目决策：新项目RAROC需高于股权资本成本（股东要求回报率）</li>
+<li>绩效激励：部门经理可通过降低风险敞口或提高收益来提升RAROC，影响奖金分配</li>
+</ul>
+</li>
+<li><p>指标特性：越高越好，反映风险资本使用效率</p>
+</li>
+<li><p>行为引导：促使业务部门在展业时平衡风险与收益，避免盲目追逐高风险业务</p>
+</li>
+</ul>
+<h5 id="3-企业风险管理"><a href="#3-企业风险管理" class="headerlink" title="3. 企业风险管理"></a>3. 企业风险管理</h5><h6 id="1）企业风险管理的定义与翻译"><a href="#1）企业风险管理的定义与翻译" class="headerlink" title="1）企业风险管理的定义与翻译"></a>1）企业风险管理的定义与翻译</h6><p>﻿</p>
+<ul>
+<li>术语对应：Enterprise Risk Management（ERM）中文可译为企业风险管理或全面风险管理（实务中简称”全风”）</li>
+<li>本质特征：董事会主导的顶层风险管理架构，区别于传统条块分割式管理</li>
+</ul>
+<h6 id="2）传统风险管理方式的弊端"><a href="#2）传统风险管理方式的弊端" class="headerlink" title="2）传统风险管理方式的弊端"></a>2）传统风险管理方式的弊端</h6><p>﻿</p>
+<ul>
+<li>管理低效表现：<ul>
+<li>过度管理：各部门独立对冲风险（如进出口部门分别应对外汇波动）</li>
+<li>真空地带：交叉业务区域无人负责（如跨部门产品的合规风险）</li>
+</ul>
+</li>
+<li>成本问题：重复设置风险对冲工具导致资源浪费</li>
+</ul>
+<h6 id="3）全面风险管理（ERM）的理念与优势"><a href="#3）全面风险管理（ERM）的理念与优势" class="headerlink" title="3）全面风险管理（ERM）的理念与优势"></a>3）全面风险管理（ERM）的理念与优势</h6><ul>
+<li>整合视角：识别部门间风险对冲关系（如外贸公司进口部与出口部的汇率风险自然抵消）</li>
+<li>治理优势：通过风险管理委员会统筹，消除”各扫门前雪”的局限性</li>
+<li>实施层级：在银行整体层面建立统一的风险偏好和限额体系</li>
+</ul>
+<h4 id="二、风险管理基础概念"><a href="#二、风险管理基础概念" class="headerlink" title="二、风险管理基础概念"></a>二、风险管理基础概念</h4><ul>
+<li>传统风险管理：业务部门以孤立的方式管理其风险，每个部门独立管理自己的风险敞口，而不考虑其他部门的风险敞口。</li>
+<li>企业风险管理(ERM)：采用跨风险类型和业务部门的广泛风险视图，实现整体协调。</li>
+</ul>
+<h4 id="三、风险测量与管理概述"><a href="#三、风险测量与管理概述" class="headerlink" title="三、风险测量与管理概述"></a>三、风险测量与管理概述</h4><ul>
+<li>章节性质：引入性内容，帮助建立对风险管理工作的整体认知</li>
+<li>测量方法：具体测量技术将在后续课程详细展开</li>
+<li>管理目的：理解为什么要开展风险管理活动</li>
+</ul>
+<h1 id="2-企业如何管理风险"><a href="#2-企业如何管理风险" class="headerlink" title="2 企业如何管理风险"></a>2 企业如何管理风险</h1><h2 id="2-1-风险管理路线图"><a href="#2-1-风险管理路线图" class="headerlink" title="2.1 风险管理路线图"></a>2.1 风险管理路线图</h2><h5 id="2-1-1-风险管理路线图"><a href="#2-1-1-风险管理路线图" class="headerlink" title="2.1.1 风险管理路线图"></a>2.1.1 风险管理路线图</h5><h6 id="1）现代风险管理的必要性"><a href="#1）现代风险管理的必要性" class="headerlink" title="1）现代风险管理的必要性"></a>1）现代风险管理的必要性</h6><ul>
+<li>需求 <ul>
+<li>行业历史: 风险管理作为专业领域发展仅50余年，在金融机构内部建立专门部门的时间更短</li>
+<li>适用对象: 不仅金融机构需要，实体企业同样面临风险管理需求（如星巴克面临咖啡豆价格波动）</li>
+<li>风险类型:<ul>
+<li>大宗商品价格风险（如铝制品企业面临铝价波动）</li>
+<li>利率风险（企业贷款受固定&#x2F;浮动利率变化影响）</li>
+<li>外汇风险（跨国企业面临多币种收入带来的汇率波动）</li>
+</ul>
+</li>
+<li>背景驱动:<ul>
+<li>市场自由化导致价格波动加剧</li>
+<li>全球经济快速发展催生风险管理需求</li>
+<li>金融机构持有复杂金融衍生工具产生对冲需求</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>机遇 <ul>
+<li>工具创新: 市场波动性增长推动金融衍生品等风险管理工具快速发展</li>
+<li>企业获益:<ul>
+<li>提供更多元化的风险管理手段</li>
+<li>通过专业工具不仅能规避风险，还可能发现新的商业机会</li>
+</ul>
+</li>
+<li>行业影响: 催生风险管理专业服务市场，形成新的商业生态</li>
+</ul>
+</li>
+</ul>
+<h6 id="2）风险管理路线图：五个步骤"><a href="#2）风险管理路线图：五个步骤" class="headerlink" title="2）风险管理路线图：五个步骤"></a>2）风险管理路线图：五个步骤</h6><p>﻿</p>
+<ul>
+<li><p>确定风险偏好 </p>
+<ul>
+<li>风险偏好 <ul>
+<li>概念 <ul>
+<li>定义：描述公司愿意接受的风险类型与水平，可以用定量或定性方式表达（英语：risk appetite）</li>
+<li>业务关联：与金融机构&#x2F;企业的业务目标直接相关，例如：<ul>
+<li>无专业外汇管理团队的企业会选择对冲所有外汇风险</li>
+<li>银行发放贷款即表示愿意接受特定水平的信用风险</li>
+</ul>
+</li>
+<li>决策层级：属于顶层设计，由董事会批准</li>
+</ul>
+</li>
+<li>风险承受能力 <ul>
+<li>本质区别：风险承受能力（risk capacity）是公司能够承受的最大风险水平，如同车辆的”最大马力”</li>
+<li>动态关系：<ul>
+<li>风险偏好≤风险承受能力（避免公司持续处于临界风险状态）</li>
+<li>风险偏好≥当前实际风险敞口（留有业务发展空间）</li>
+</ul>
+</li>
+<li>形象比喻：三者的量级关系如同阶梯：风险承受能力（最高）→风险偏好→实际风险敞口（最低）</li>
+</ul>
+</li>
+<li>当前风险敞口 <ul>
+<li>实务特征：反映企业当前实际承担的风险水平</li>
+<li>管理意义：为风险偏好的动态调整提供基准参照</li>
+<li>典型表现：如金融机构实际贷款违约率、企业外汇暴露头寸等具体指标</li>
+</ul>
+</li>
+<li>实践应用 <ul>
+<li>声明形式：<ul>
+<li>书面形式：年报&#x2F;半年报中的风险披露章节</li>
+<li>口头形式：高管公开讲话中的风险表述</li>
+</ul>
+</li>
+<li>战略匹配：<ul>
+<li>低风险偏好企业对应稳健增长目标（如10-15%增长率）</li>
+<li>高风险偏好企业追求高速发展（如新能源汽车企业的翻倍增长）</li>
+</ul>
+</li>
+<li>实现机制：通过风险管理政策、限额体系等将高层声明转化为日常操作</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>董事会决策机制<ul>
+<li>治理结构<ul>
+<li>决策流程：<ul>
+<li>董事会与管理层沟通→设定风险偏好→董事会最终批准</li>
+<li>需保持与业务战略的逻辑一致性</li>
+</ul>
+</li>
+<li>制衡关系：<ul>
+<li>股东（所有者）与高管层（经营者）存在潜在利益冲突</li>
+<li>董事会需协调短期业绩压力与长期发展目标</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>利益平衡<ul>
+<li>债权人视角：<ul>
+<li>关注风险最小化（收益上限固定）</li>
+<li>典型案例：Netflix在债券市场被评定为高收益债&#x2F;垃圾债</li>
+</ul>
+</li>
+<li>股东视角：<ul>
+<li>倾向承担更高风险换取股权回报</li>
+<li>典型案例：高速增长企业更受股票市场青睐</li>
+</ul>
+</li>
+<li>协调原则：风险偏好需在融资成本与股东回报预期间取得平衡</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>识别和映射风险 </p>
+<ul>
+<li>定义：将企业经营管理中的各类风险通过二维矩阵进行可视化评估</li>
+<li>评估维度：<ul>
+<li>横坐标：风险影响程度（极低→极高）</li>
+<li>纵坐标：风险发生可能性（0→5）</li>
+</ul>
+</li>
+<li>风险区域划分：<ul>
+<li>蓝色区域：低影响+低频率（安全区）</li>
+<li>黄色区域：中等影响+中等频率（警戒区）</li>
+<li>红色区域：高影响+高频率（紧急处理区）</li>
+</ul>
+</li>
+<li>常见风险类型：<ul>
+<li>货物管理风险（A）</li>
+<li>信用管理及应收账款风险（B）</li>
+<li>核心竞争力风险（C）</li>
+<li>运输管理风险（D）</li>
+<li>宏观经济风险（E）</li>
+<li>税务风险（F）</li>
+<li>安全风险（G）</li>
+<li>合同风险（H）</li>
+<li>投资管理风险（I）</li>
+<li>员工招聘与培训风险（J）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>使风险偏好可操作化 </p>
+<ul>
+<li>实施主体：<ul>
+<li>决策层：董事会（顶层设计）</li>
+<li>执行层：高管层及业务条线人员</li>
+</ul>
+</li>
+<li>操作化方法：<ul>
+<li>将抽象偏好转化为具体指标（如贷款组合违约损失率≤3%）</li>
+<li>建立风险限额框架（Risk Limit）</li>
+</ul>
+</li>
+<li>限额示例：<ul>
+<li>交易员每日市场风险敞口≤500万美元</li>
+<li>某类贷款占总资产比例≤5%</li>
+</ul>
+</li>
+<li>一致性检查：确保业务流程与风险承受能力匹配</li>
+</ul>
+</li>
+<li><p>实施 </p>
+<ul>
+<li>选择风险管理工具 <ul>
+<li>策略类型：<ul>
+<li>规避风险：完全退出风险活动</li>
+<li>保留风险：主动承担风险后果</li>
+<li>降低风险：通过控制措施减少风险</li>
+<li>转移风险：使用保险&#x2F;衍生工具转嫁风险</li>
+</ul>
+</li>
+<li>决策考量：<ul>
+<li>成本收益分析（如保险保费过高可能放弃）</li>
+<li>重大策略需高管层&#x2F;董事会决策</li>
+<li>风险管理人员负责具体工具选择与执行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>定期重新评估以捕捉变化</p>
+<ul>
+<li>评估触发条件：<ul>
+<li>业务结构调整（如退出印度市场）</li>
+<li>组织战略变更</li>
+<li>风险环境变化</li>
+</ul>
+</li>
+<li>评估重点：<ul>
+<li>现有风险管理措施的有效性</li>
+<li>新出现风险的识别与映射</li>
+<li>风险限额的适应性调整</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-2-对冲的优缺点"><a href="#2-2-对冲的优缺点" class="headerlink" title="2.2 对冲的优缺点"></a>2.2 对冲的优缺点</h2><h4 id="2-2-1-对冲的优缺点"><a href="#2-2-1-对冲的优缺点" class="headerlink" title="2.2.1 对冲的优缺点"></a>2.2.1 对冲的优缺点</h4><p>﻿</p>
+<h5 id="1-对冲策略"><a href="#1-对冲策略" class="headerlink" title="1. 对冲策略"></a>1. 对冲策略</h5><h6 id="1）对冲概念与目标"><a href="#1）对冲概念与目标" class="headerlink" title="1）对冲概念与目标"></a>1）对冲概念与目标</h6><ul>
+<li>核心目的：降低企业陷入财务困境的可能性</li>
+<li>财务困境成本：<ul>
+<li>直接成本：如破产清算费用</li>
+<li>机会成本：如失去投资机会</li>
+</ul>
+</li>
+<li>行业术语：<ul>
+<li>中文常译为”套期保值”或”套保”</li>
+<li>对应英文”Hedging”</li>
+</ul>
+</li>
+</ul>
+<h6 id="2）对冲案例"><a href="#2）对冲案例" class="headerlink" title="2）对冲案例"></a>2）对冲案例</h6><ul>
+<li>啤酒行业：<ul>
+<li>风险点：小麦价格波动</li>
+<li>工具：期货合约锁定采购价（如每蒲式耳$2.5）</li>
+<li>案例：百威英博通过期货管理原材料成本</li>
+</ul>
+</li>
+<li>航空业：<ul>
+<li>风险点：航油价格波动</li>
+<li>策略差异：<ul>
+<li>多数公司：对冲部分风险</li>
+<li>少数公司：完全承担风险</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>跨国企业：<ul>
+<li>外汇风险管理：使用远期&#x2F;期货&#x2F;互换合约</li>
+<li>利率风险管理：特别影响债券投资组合</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-策略构建与实施"><a href="#2-策略构建与实施" class="headerlink" title="2. 策略构建与实施"></a>2. 策略构建与实施</h5><h6 id="1）对冲机制原理"><a href="#1）对冲机制原理" class="headerlink" title="1）对冲机制原理"></a>1）对冲机制原理</h6><ul>
+<li>对冲三要素：<ul>
+<li>对冲对象：面临潜在损失的资产&#x2F;负债（如星巴克的咖啡豆）</li>
+<li>对冲工具：产生反向收益的衍生品（期货&#x2F;远期等）</li>
+<li>对冲效果：损失与收益相互抵消</li>
+</ul>
+</li>
+<li>决策依据：<ul>
+<li>价格走势预测准确性</li>
+<li>风险承受能力评估</li>
+</ul>
+</li>
+</ul>
+<h6 id="2）企业规模与工具选择"><a href="#2）企业规模与工具选择" class="headerlink" title="2）企业规模与工具选择"></a>2）企业规模与工具选择</h6><ul>
+<li>小型企业：<ul>
+<li>工具限制：标准化场内工具（如交易所期货）</li>
+</ul>
+</li>
+<li>大型跨国企业：<ul>
+<li>优势：可定制场外衍生品（如远期合约）</li>
+<li>案例：麦当劳使用外汇衍生品管理多币种收入</li>
+</ul>
+</li>
+</ul>
+<h6 id="3）对冲类型比较"><a href="#3）对冲类型比较" class="headerlink" title="3）对冲类型比较"></a>3）对冲类型比较</h6><ul>
+<li>静态对冲：<ul>
+<li>特点：一次性操作后不再调整</li>
+<li>优点：交易成本低</li>
+</ul>
+</li>
+<li>动态对冲：<ul>
+<li>特点：持续调整对冲比例</li>
+<li>缺点：产生频繁交易成本</li>
+<li>适用：波动剧烈的市场环境</li>
+</ul>
+</li>
+</ul>
+<h6 id="4）期限规划要点"><a href="#4）期限规划要点" class="headerlink" title="4）期限规划要点"></a>4）期限规划要点</h6><ul>
+<li>关键考虑：<ul>
+<li>业务周期匹配（如星巴克年度咖啡豆采购计划）</li>
+<li>价格波动敏感期锁定</li>
+</ul>
+</li>
+<li>错误示范：<ul>
+<li>对冲期限与业务需求脱节</li>
+<li>过度对冲造成额外成本</li>
+</ul>
+</li>
+</ul>
+<h6 id="5）衍生品使用复杂性"><a href="#5）衍生品使用复杂性" class="headerlink" title="5）衍生品使用复杂性"></a>5）衍生品使用复杂性</h6><ul>
+<li>会计处理：<ul>
+<li>不同衍生工具适用不同会计准则</li>
+<li>报表编制方法影响财务表现</li>
+</ul>
+</li>
+<li>专业要求：<ul>
+<li>需要专门团队进行：<ul>
+<li>风险敞口测算</li>
+<li>工具选择评估</li>
+<li>策略动态调整</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-实务注意事项"><a href="#3-实务注意事项" class="headerlink" title="3. 实务注意事项"></a>3. 实务注意事项</h5><ul>
+<li>数据基础：<ul>
+<li>需建立完善的价格数据库</li>
+<li>案例：百威英博的小麦价格预测模型</li>
+</ul>
+</li>
+<li>成本控制：<ul>
+<li>平衡对冲效果与交易成本</li>
+<li>避免”为对冲而对冲”的误区</li>
+</ul>
+</li>
+<li>风险意识：<ul>
+<li>对冲不能消除所有风险</li>
+<li>需保留适当风险敞口获取收益</li>
+</ul>
+</li>
+</ul>
+<h5 id="4-对冲风险的优缺点"><a href="#4-对冲风险的优缺点" class="headerlink" title="4. 对冲风险的优缺点"></a>4. 对冲风险的优缺点</h5><h6 id="1）优点"><a href="#1）优点" class="headerlink" title="1）优点"></a>1）优点</h6><ul>
+<li>降低波动性：通过对冲可以降低企业收益和现金流的波动性，本质上是减少经营中的不确定性，使企业财务状况更加稳健。</li>
+<li>融资优势：当企业盈利能力稳定时，在资本市场进行股权融资或债权融资时，融资能力会提高，融资成本会降低，从而更好地支持业务增长。以百威英博为例，稳定的资产状况（酿造厂和设备）需要稳定的资金来源支持。</li>
+<li>管理控制：对冲使管理层能更好地控制公司经济表现，从而更有效地实现董事会制定的战略目标。董事会作为公司顶层设计机构，需要监督管理层的表现，而稳定的经济表现有助于这一监督过程。</li>
+<li>资金来源结构：企业资金主要来自债务（Debt）和权益（Equity）两方面。债务包括银行贷款和债券融资，权益则是股东投入的资金。对冲带来的财务稳定性使企业在两种融资渠道都更具吸引力。</li>
+</ul>
+<h6 id="2）缺点"><a href="#2）缺点" class="headerlink" title="2）缺点"></a>2）缺点</h6><p>﻿</p>
+<ul>
+<li>风险误判：企业可能误解自身面临的风险类型，错误评估风险程度，未能察觉市场结构变化，或出现流氓交易员等问题，导致对冲策略失效。例如云南白药和中钱股份过度参与期货交易导致主营业务注意力分散。</li>
+<li>管理分散：主动对冲可能分散管理层对核心业务的注意力，长期来看会降低企业盈利能力。云南白药案例显示，期货市场短期收益可能诱使企业忽视主营业务发展。</li>
+<li>专业要求：风险管理需要专业技能、知识体系、基础设施以及数据获取处理能力。例如期货交易涉及交割管理、保证金制度、流动性管理等专业操作，需要配备专业团队。</li>
+<li>合规成本：即使完善的风险管理策略也会带来额外成本，包括信息披露要求、特殊财务会计处理（如对冲会计与常规会计的区别）以及更高的管理要求。这些都会增加企业的运营成本和管理复杂度。</li>
+<li>核心价值与挑战：对冲的核心价值在于增加企业经营的确定性，但同时也面临三大挑战：风险误判可能导致策略失效、可能偏离主营业务、对企业专业能力和合规成本提出更高要求。</li>
+</ul>
+<h5 id="5-对冲风险的优缺点总结"><a href="#5-对冲风险的优缺点总结" class="headerlink" title="5. 对冲风险的优缺点总结"></a>5. 对冲风险的优缺点总结</h5><h6 id="1）企业资金来源与对冲态度概述"><a href="#1）企业资金来源与对冲态度概述" class="headerlink" title="1）企业资金来源与对冲态度概述"></a>1）企业资金来源与对冲态度概述</h6><p>﻿</p>
+<ul>
+<li>资金来源构成：企业资金主要来源于债权人的债务融资和股东的权益融资</li>
+<li>决策协调机制：董事会需要平衡债权人和股东的利益关系，对冲决策需考虑双方态度差异</li>
+</ul>
+<h6 id="2）债权人追求稳定性，支持对冲"><a href="#2）债权人追求稳定性，支持对冲" class="headerlink" title="2）债权人追求稳定性，支持对冲"></a>2）债权人追求稳定性，支持对冲</h6><ul>
+<li>风险偏好：债权人更关注资金安全性，追求稳定的本息回报</li>
+<li>对冲支持原因：<ul>
+<li>降低原材料价格波动、汇率风险等各类经营不确定性</li>
+<li>收益上限固定（仅利息收入），无法分享企业高风险带来的超额收益</li>
+</ul>
+</li>
+<li>典型案例：无论企业承担多大风险，债权人最大收益仍限于约定利息</li>
+</ul>
+<h6 id="3）股东通过组合分散化降低风险，可能不支持对冲"><a href="#3）股东通过组合分散化降低风险，可能不支持对冲" class="headerlink" title="3）股东通过组合分散化降低风险，可能不支持对冲"></a>3）股东通过组合分散化降低风险，可能不支持对冲</h6><ul>
+<li>分散化投资策略：部分股东通过跨行业持股（如同时持有航空和石油股票）自然对冲风险</li>
+<li>反对对冲原因：<ul>
+<li>企业对冲操作透明度不足，股东难以准确评估对冲效果</li>
+<li>更倾向自主控制风险敞口，保持投资组合的灵活调整空间</li>
+</ul>
+</li>
+<li>典型例证：油价上涨时，东航（受损）与中石油（受益）的股价变动可相互抵消</li>
+</ul>
+<h5 id="6-风险管理工具与手段"><a href="#6-风险管理工具与手段" class="headerlink" title="6. 风险管理工具与手段"></a>6. 风险管理工具与手段</h5><h6 id="1）限额管理：限制风险承担额度"><a href="#1）限额管理：限制风险承担额度" class="headerlink" title="1）限额管理：限制风险承担额度"></a>1）限额管理：限制风险承担额度</h6><ul>
+<li>实施方式：<ul>
+<li>风险敞口限额：如地区贷款不超过总贷款额的特定百分比</li>
+<li>行业集中度限额：如能源行业贷款占比上限控制</li>
+<li>交易量限额：单日&#x2F;单笔交易规模限制</li>
+</ul>
+</li>
+<li>应用场景：金融机构核心风控手段，特别适用于信贷风险管理</li>
+</ul>
+<h6 id="2）在险价值-VaR-：不能反映极端市场环境下的潜在损失幅度"><a href="#2）在险价值-VaR-：不能反映极端市场环境下的潜在损失幅度" class="headerlink" title="2）在险价值(VaR)：不能反映极端市场环境下的潜在损失幅度"></a>2）在险价值(VaR)：不能反映极端市场环境下的潜在损失幅度</h6><ul>
+<li>指标特性：<ul>
+<li>基于置信水平（如95%）测算最大预期损失</li>
+<li>计算公式：﻿∨VaR∨VaR﻿（具体公式后续课程展开）</li>
+</ul>
+</li>
+<li>局限性：<ul>
+<li>无法捕捉尾部极端风险（超过置信区间的损失）</li>
+<li>部分计算方法存在市场反应滞后问题</li>
+</ul>
+</li>
+</ul>
+<h6 id="3）压力测试、敏感性分析和情景分析：难以确保涵盖所有风险因素"><a href="#3）压力测试、敏感性分析和情景分析：难以确保涵盖所有风险因素" class="headerlink" title="3）压力测试、敏感性分析和情景分析：难以确保涵盖所有风险因素"></a>3）压力测试、敏感性分析和情景分析：难以确保涵盖所有风险因素</h6><ul>
+<li>压力测试：<ul>
+<li>情境分析的特殊形式，模拟极端市场条件</li>
+<li>示例：同时测试利率飙升+汇率暴跌+大宗商品暴跌的复合冲击</li>
+</ul>
+</li>
+<li>敏感性分析：<ul>
+<li>单变量测试方法（如通胀率从1%逐步上调至1.04%）</li>
+<li>输出变量对输入参数的敏感程度量化</li>
+</ul>
+</li>
+<li>共性缺陷：无法穷尽所有风险因子组合，存在模型盲区</li>
+</ul>
+<h6 id="4）风险管理手段的多样性：组合拳"><a href="#4）风险管理手段的多样性：组合拳" class="headerlink" title="4）风险管理手段的多样性：组合拳"></a>4）风险管理手段的多样性：组合拳</h6><ul>
+<li>工具互补性：<ul>
+<li>VaR监控日常风险，压力测试补充尾部风险</li>
+<li>限额管理预防风险积聚，敏感性分析识别关键驱动因素</li>
+</ul>
+</li>
+<li>最佳实践：金融机构需建立包含交易限额、风险监测、压力测试等的完整风控体系</li>
+</ul>
+<h6 id="5）对冲的优缺点及股东和债权人的态度"><a href="#5）对冲的优缺点及股东和债权人的态度" class="headerlink" title="5）对冲的优缺点及股东和债权人的态度"></a>5）对冲的优缺点及股东和债权人的态度</h6><ul>
+<li>对冲优势：<ul>
+<li>降低经营不确定性，符合债权人利益诉求</li>
+<li>规避市场结构突变风险（如大宗商品定价机制变化）</li>
+</ul>
+</li>
+<li>对冲弊端：<ul>
+<li>可能误导管理层对核心业务的专注（如过度关注衍生品交易）</li>
+<li>需要专业团队、数据系统和持续监控投入</li>
+</ul>
+</li>
+<li>利益冲突：债权人普遍支持对冲，部分偏好自主风险管理的股东可能反对</li>
+</ul>
+<h4 id="2-2-2-风险管理框架总结"><a href="#2-2-2-风险管理框架总结" class="headerlink" title="2.2.2 风险管理框架总结"></a>2.2.2 风险管理框架总结</h4><ul>
+<li>对冲含义：通过建立相反头寸来抵消潜在风险的操作策略</li>
+<li>风险偏好：企业愿意承受的风险类型和水平</li>
+<li>风险承受度：企业能够承担的最大风险损失阈值</li>
+<li>三者关系：<ul>
+<li>风险偏好决定战略方向</li>
+<li>风险承受度设定操作边界</li>
+<li>对冲是实现风险控制的具体手段</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-风险管理实施路径"><a href="#1-风险管理实施路径" class="headerlink" title="1. 风险管理实施路径"></a>1. 风险管理实施路径</h5><ul>
+<li>实施步骤：<ul>
+<li>明确企业风险偏好</li>
+<li>评估当前风险敞口</li>
+<li>制定风险承受标准</li>
+<li>选择对冲工具组合</li>
+</ul>
+</li>
+<li>关键区别：<ul>
+<li>战略性决策（偏好）vs 战术性控制（对冲）</li>
+<li>主观意愿（偏好）vs 客观能力（承受度）</li>
+</ul>
+</li>
+<li>采用康奈尔笔记法结构化呈现知识点</li>
+<li>完全基于提供的课程记录内容，未添加任何杜撰信息</li>
+<li>幻灯片内容与知识点精准匹配</li>
+<li>保留了所有关键术语和逻辑关系</li>
+<li>省略了课程结尾的过渡性内容</li>
+<li>未提及任何笔记生成过程相关信息</li>
+</ul>
+<h1 id="3-风险管理的治理"><a href="#3-风险管理的治理" class="headerlink" title="3 风险管理的治理(##)"></a>3 风险管理的治理(##)</h1><h2 id="3-1-风险治理基础"><a href="#3-1-风险治理基础" class="headerlink" title="3.1 风险治理基础"></a>3.1 风险治理基础</h2><h6 id="1）公司治理"><a href="#1）公司治理" class="headerlink" title="1）公司治理"></a>1）公司治理</h6><ul>
+<li>运作方式: 公司治理是指公司运作的方式，与国家治理类似，通过系统框架实现良好运营。</li>
+<li>框架功能: 提供组织内部各群体的权利、角色和责任定义，包括股东、董事会和高级管理层的具体职责划分。</li>
+<li>关系协调: 需要协调股东、董事会和管理层之间的复杂关系。</li>
+</ul>
+<h6 id="2）风险治理"><a href="#2）风险治理" class="headerlink" title="2）风险治理"></a>2）风险治理</h6><ul>
+<li>风险治理的定义与基础设施<ul>
+<li>核心任务: 建立组织基础设施来制定、实施并监督风险管理的正式程序。</li>
+<li>基础设施组成:<ul>
+<li>物理资源: 包括IT系统、数据库、电脑等硬件设备</li>
+<li>操作流程: 覆盖全企业的风险管理流程和系统，如风险操作流程、风险管理系统</li>
+</ul>
+</li>
+<li>实施要求: 需要保证风险管理活动能够顺利展开，包含硬件和软件两方面的建设。</li>
+</ul>
+</li>
+<li>风险治理的透明度和沟通机制 <ul>
+<li>三方沟通: 强调在组织内部、外部利益相关方（如债权人、员工、供应商、客户）和监管机构（如证监会、银保监会）之间建立透明沟通渠道。</li>
+<li>实施方式:<ul>
+<li>向债权人披露风险管理信息（如债券招募说明书）</li>
+<li>向监管机构提交监管报告</li>
+<li>通过风险报告与各方沟通风险数据</li>
+</ul>
+</li>
+<li>治理目标: 通过良好治理机制积累风险数据，转化为可沟通的风险报告。</li>
+</ul>
+</li>
+<li>风险治理的统一实施与部门设置 <ul>
+<li>统一性原则: 风险管理必须在全企业范围内实施，遵循统一的政策和方法论。</li>
+<li>部门协作: 需要公司内部各部门协调配合，为风险管理提供组织保障。</li>
+</ul>
+</li>
+</ul>
+<h6 id="3）公司治理结构"><a href="#3）公司治理结构" class="headerlink" title="3）公司治理结构"></a>3）公司治理结构</h6><ul>
+<li>股东与高管层：所有权与经营权的分离 <ul>
+<li>所有权归属: 股东是公司所有者，通过股东会进行重大决策投票。</li>
+<li>经营权委托: 股东将日常经营管理权委托给高管层（CXO，如CEO、CFO、CRO等职业经理人）。</li>
+<li>典型问题: 产生所有权与经营权的分离现象。</li>
+</ul>
+</li>
+<li>高管层的身份与目标 <ul>
+<li>职业属性: 多为职业经理人，有自身利益目标（如获得丰厚薪酬）。</li>
+<li>薪酬结构: 通常包含固定部分和与业绩挂钩的浮动部分（如销售收入、利润、开店数量等指标）。</li>
+</ul>
+</li>
+<li>高管薪酬与风险管理 <ul>
+<li>风险关联: 薪酬设置与高管承担的风险密切相关。</li>
+<li>潜在冲突: 以销售收入为考核重点可能导致高管采取短期行为（如过度促销、快速扩张），损害公司长期利益。</li>
+</ul>
+</li>
+<li>代理人问题：股东与高管的利益冲突 <ul>
+<li>问题本质: 高管作为股东代理人，可能为自身利益损害股东长期利益。</li>
+<li>典型表现: 高管为达成短期业绩目标而采取高风险策略。</li>
+</ul>
+</li>
+<li>董事会的角色与责任 <ul>
+<li>产生方式: 由股东选举产生。</li>
+<li>核心职能:<ul>
+<li>监督高管层工作</li>
+<li>制定企业战略目标（顶层设计）</li>
+<li>协调各利益相关方关系</li>
+</ul>
+</li>
+<li>最佳实践: 董事长和CEO应由不同人担任，以加强监督。</li>
+</ul>
+</li>
+<li>不同国家公司治理体系的差异 <ul>
+<li>中国特色: 设立监事会监督董事会和高管层。</li>
+<li>国际差异: 德国等国家也有监事会制度，各国根据国情建立不同治理体系。</li>
+<li>FRM要求: 重点掌握高管、股东和董事会三者的基本关系。</li>
+</ul>
+</li>
+</ul>
+<h6 id="4）董事会"><a href="#4）董事会" class="headerlink" title="4）董事会"></a>4）董事会</h6><ul>
+<li>董事会的总体职责 <ul>
+<li>顶层设计角色: 董事会主要负责”指点江山”的顶层设计工作，包括定义、发起、批准和审核等战略性决策，区别于高管层的具体执行职能。</li>
+<li>核心责任范围: 对银行负有总体责任，具体包括批准和监督管理层对银行战略目标、治理框架和企业文化的实施。</li>
+<li>职能划分原则: 判断董事会与高管层职责的关键在于区分”顶层设计”（董事会）与”具体执行”（高管层及团队）。</li>
+</ul>
+</li>
+<li>董事会的组成 <ul>
+<li>任职资格要求: 成员需在个人和集体层面具备并保持胜任资格，理解监督和公司治理角色，能做出稳健客观判断。</li>
+<li>专业互补性: 每位董事有其专业方向（如经营管理、会计、风险管理等），通过下设专业委员会实现能力互补。</li>
+</ul>
+</li>
+<li>传统职责 ﻿<ul>
+<li>股东利益至上: 传统理论认为董事会最大职责是保护股东利益，因其由股东选举产生。</li>
+<li>基本职能构成: 包括制定战略方向、监督公司及管理层绩效，体现股东代理人角色。</li>
+</ul>
+</li>
+<li>改进后的职责 <ul>
+<li>利益相关方扩展: 现代理念下责任涵盖所有利益相关方（债权人、员工、供应商、顾客等），追求多方共赢。</li>
+<li>协调机制: 需调和各利益方关系，例如供应商关系恶化可能导致合作终止，员工利益受损影响企业稳定。</li>
+</ul>
+</li>
+<li>利益冲突 <ul>
+<li>主要冲突类型: 特别关注股东与管理层之间的利益分歧（代理人问题）。</li>
+<li>协调必要性: 董事会需作为中立方协调不同利益相关方的诉求差异。</li>
+</ul>
+</li>
+<li>代理人问题 <ul>
+<li>问题本质: 管理层（代理人）可能为追求短期业绩（如利润粉饰）损害长期目标。</li>
+<li>监督机制: 董事会通过独立监督职能约束管理层行为，最佳实践要求董事长与CEO分设。</li>
+<li>实践差异:<ul>
+<li>成熟企业（如通用电气、可口可乐）严格实行分设制度</li>
+<li>初创企业常见董事长兼任CEO情况（多为大股东直接管理）</li>
+<li>理论建议：避免”球员兼裁判”，增强监督效能</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>监督 <ul>
+<li>风险监督职能: 需分析公司活动的风险回报比，当管理层决定承担风险时，必须评估风险类型、规模及潜在威胁。</li>
+<li>战略参与度: 积极参与战略规划，批准风险偏好（如企业转型大模型业务时的风险评估）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="一、风险治理基础"><a href="#一、风险治理基础" class="headerlink" title="一、风险治理基础"></a>一、风险治理基础</h4><h5 id="1-董事会在风险治理中的核心作用"><a href="#1-董事会在风险治理中的核心作用" class="headerlink" title="1. 董事会在风险治理中的核心作用"></a>1. 董事会在风险治理中的核心作用</h5><h6 id="1）风控体系：确保公司建立有效的风险管理体系"><a href="#1）风控体系：确保公司建立有效的风险管理体系" class="headerlink" title="1）风控体系：确保公司建立有效的风险管理体系"></a>1）风控体系：确保公司建立有效的风险管理体系</h6><ul>
+<li>顶层设计角色: 董事会负责确保公司建立有效的风险管理体系，但不参与具体参数设置和日常监控工作</li>
+<li>程序完整性: 确保识别、评估和处理各类风险的程序到位，采用积极主动但不日常参与的方法</li>
+<li>决策执行监督: 确保风险管理决策的授权和实施过程按计划执行，从战略层面把控风险治理</li>
+</ul>
+<h6 id="2）业绩评估：评估公司的绩效指标和薪酬策略"><a href="#2）业绩评估：评估公司的绩效指标和薪酬策略" class="headerlink" title="2）业绩评估：评估公司的绩效指标和薪酬策略"></a>2）业绩评估：评估公司的绩效指标和薪酬策略</h6><ul>
+<li>风险业务关联: 风险承担与业务目标密切相关，薪酬体系需与业务指标挂钩</li>
+<li>风险调整机制: 高管薪酬应基于风险调整后的绩效，浮动部分需反映实际风险承担</li>
+<li>利益一致性: 确保薪酬激励机制与股东长期利益一致，且符合公司风险偏好</li>
+</ul>
+<h6 id="3）信息披露：对监督与风险透明度负责"><a href="#3）信息披露：对监督与风险透明度负责" class="headerlink" title="3）信息披露：对监督与风险透明度负责"></a>3）信息披露：对监督与风险透明度负责</h6><ul>
+<li>披露范围: 包含内部公司制度和外部监管规定（如年报、季报等法定披露）</li>
+<li>信息可靠性: 确保获得的关于风险管理实施的信息准确可靠</li>
+<li>监督责任: 对财务报告、监管披露的准确性和完整性负最终责任</li>
+</ul>
+<h6 id="4）董事会下设委员会的顶层设计作用"><a href="#4）董事会下设委员会的顶层设计作用" class="headerlink" title="4）董事会下设委员会的顶层设计作用"></a>4）董事会下设委员会的顶层设计作用</h6><p>﻿</p>
+<ul>
+<li>委员会性质: 董事会下设委员会（如风险管理委员会、审计委员会）属于董事会层面</li>
+<li>职能定位: 专注于顶层设计而非具体执行，保持战略高度</li>
+<li>专业分工: 通过专业委员会实现风险治理的专业化分工</li>
+</ul>
+<h5 id="2-董事会层面的风险治理"><a href="#2-董事会层面的风险治理" class="headerlink" title="2. 董事会层面的风险治理"></a>2. 董事会层面的风险治理</h5><h6 id="1）风险管理委员会"><a href="#1）风险管理委员会" class="headerlink" title="1）风险管理委员会"></a>1）风险管理委员会</h6><ul>
+<li>核心职能:<ul>
+<li>风险偏好设定: 设定公司整体风险偏好并独立审查重大风险治理情况</li>
+<li>政策审批: 审批关键风险管理政策、程序、方法论和基础设施</li>
+<li>授权执行: 将风险水平审查责任授权给专业委员会执行</li>
+</ul>
+</li>
+<li>运作特点:<ul>
+<li>由具备风险管理专长的董事组成</li>
+<li>将战略层面的风险偏好分解为可操作的约束条件</li>
+<li>通过高管层和部门负责人落实风险政策</li>
+</ul>
+</li>
+</ul>
+<h6 id="2）审计委员会"><a href="#2）审计委员会" class="headerlink" title="2）审计委员会"></a>2）审计委员会</h6><ul>
+<li>监督范围:<ul>
+<li>财务监督: 确保财务报告、合规、内部控制和风险管理流程质量</li>
+<li>非财务监督: 推动公司在非财务事项上遵守行业最佳实践</li>
+<li>全面覆盖: 监管、法律、合规等活动均在其职责范围内</li>
+</ul>
+</li>
+<li>独立性要求:<ul>
+<li>主席必须由非执行董事担任</li>
+<li>多数成员应为独立董事（与公司无利益关系）</li>
+<li>提供对公司运作的独立验证功能</li>
+</ul>
+</li>
+</ul>
+<h6 id="3）风险咨询董事"><a href="#3）风险咨询董事" class="headerlink" title="3）风险咨询董事"></a>3）风险咨询董事</h6><ul>
+<li>身份特征:<ul>
+<li>独立董事身份（RAD，Risk Advisory Director）</li>
+<li>通常来自非金融行业的风险管理专家</li>
+<li>同时列席风险管理委员会和审计委员会会议</li>
+</ul>
+</li>
+<li>核心价值:<ul>
+<li>专业支持: 提供风险管理、合规等领域的专业意见</li>
+<li>最佳实践导入: 同步最新公司治理与风险管理实践</li>
+<li>业务风险洞察: 针对核心业务模式提供风险分析建议</li>
+</ul>
+</li>
+<li>效能提升: 增强两个专业委员会的工作效能</li>
+<li>质量审查: 审查与董事会批准的风险政策相关的治理问题</li>
+<li>风险预警: 识别业务发展和运营活动中的潜在风险</li>
+</ul>
+<h5 id="3-内部审计"><a href="#3-内部审计" class="headerlink" title="3. 内部审计"></a>3. 内部审计</h5><ul>
+<li>核心职能: 确保风险管理&#x2F;治理的建立、实施和有效性。作为独立第三方审查企业运营，防范内部腐败和风险漏洞。</li>
+<li>工作内容:<ul>
+<li>审查所有与风险管理相关的流程、政策和程序</li>
+<li>检查监控程序执行情况（如银行风险监控中是否存在”睁一只眼闭一只眼”的渎职行为）</li>
+<li>跟踪风险管理系统升级进展，评估数据生成和保护措施</li>
+<li>验证模型参数等运营细节（如巧克力公司审计案例中核查糖浆、可可原料库存）</li>
+</ul>
+</li>
+<li>部门特性: 属于具体执行部门（区别于审计委员会的顶层设计职能），需保持独立性和客观性。</li>
+</ul>
+<h5 id="4-首席风险官"><a href="#4-首席风险官" class="headerlink" title="4. 首席风险官"></a>4. 首席风险官</h5><h6 id="1）首席风险官概述"><a href="#1）首席风险官概述" class="headerlink" title="1）首席风险官概述"></a>1）首席风险官概述</h6><ul>
+<li>设立必要性: 金融机构必须设立（如银行），普通企业视情况而定。典型案例显示银行因风险管理重要性必须设置该职位。</li>
+<li>任职条件:<ul>
+<li>需具备足够地位、独立性和资源调配能力</li>
+<li>必须能够直接接触董事会</li>
+<li>被赋予履行职责所需的权力与独立性（不能因业务部门业绩压力妥协）</li>
+</ul>
+</li>
+</ul>
+<h6 id="2）首席风险官职责与角色"><a href="#2）首席风险官职责与角色" class="headerlink" title="2）首席风险官职责与角色"></a>2）首席风险官职责与角色</h6><p>﻿</p>
+<p>19:41</p>
+<ul>
+<li>双重汇报关系:<ul>
+<li>行政上向CEO汇报</li>
+<li>职能上在董事会风险委员会拥有席位</li>
+</ul>
+</li>
+<li>核心权限:<ul>
+<li>对新型金融工具和业务线的审批具有发言权</li>
+<li>作为董事会与管理层的联络桥梁</li>
+</ul>
+</li>
+<li>具体职责:<ul>
+<li>向董事会汇报：风险容忍度、风险管理计划效果、系统问题</li>
+<li>向管理层传达：董事会意见及相关风险信息</li>
+<li>领导日常风险管理团队开展风险测量工作</li>
+</ul>
+</li>
+</ul>
+<h6 id="3）风险管理委员会与董事会下设委员会"><a href="#3）风险管理委员会与董事会下设委员会" class="headerlink" title="3）风险管理委员会与董事会下设委员会"></a>3）风险管理委员会与董事会下设委员会</h6><ul>
+<li>董事会核心职能:<ul>
+<li>监督高管层（最佳实践要求董事长与CEO分设）</li>
+<li>制定战略规划</li>
+<li>协调利益相关方矛盾</li>
+</ul>
+</li>
+<li>专业委员会分工:<ul>
+<li>风险管理委员会：负责风控体系设计</li>
+<li>审计委员会：监督财务报告及信息披露准确性</li>
+</ul>
+</li>
+</ul>
+<h6 id="4）董事会风险委员会构成与执行"><a href="#4）董事会风险委员会构成与执行" class="headerlink" title="4）董事会风险委员会构成与执行"></a>4）董事会风险委员会构成与执行</h6><ul>
+<li>组成人员: 通常包括CEO、CRO、CFO、银行司库、首席合规官(CCO)等</li>
+<li>执行架构:<ul>
+<li>顶层设计：风险管理委员会</li>
+<li>具体执行：高级风险委员会</li>
+<li>细化操作：各类小组委员会</li>
+</ul>
+</li>
+</ul>
+<h6 id="5）风险咨询董事与内部审计"><a href="#5）风险咨询董事与内部审计" class="headerlink" title="5）风险咨询董事与内部审计"></a>5）风险咨询董事与内部审计</h6><ul>
+<li>风险咨询董事:<ul>
+<li>身份：独立董事&#x2F;行业专家</li>
+<li>职能：同时在风险管理委员会和审计委员会列席，提供专业意见</li>
+</ul>
+</li>
+<li>内部审计定位:<ul>
+<li>与审计委员会形成”顶层设计-具体执行”的互补关系</li>
+<li>直接对企业运营细节进行审查（如原料核查、模型参数验证等）</li>
+</ul>
+</li>
+</ul>
+<h6 id="6）内部审计的职责"><a href="#6）内部审计的职责" class="headerlink" title="6）内部审计的职责"></a>6）内部审计的职责</h6><ul>
+<li>审查重点:<ul>
+<li>风险管理流程的有效性</li>
+<li>监控程序的执行质量</li>
+<li>数据管理系统的可靠性</li>
+<li>模型参数的准确性</li>
+</ul>
+</li>
+<li>工作目标: 通过独立审查确保企业治理机制真实有效运行</li>
+</ul>
+<h4 id="二、内容总结"><a href="#二、内容总结" class="headerlink" title="二、内容总结"></a>二、内容总结</h4><h5 id="1-公司治理结构职责划分"><a href="#1-公司治理结构职责划分" class="headerlink" title="1. 公司治理结构职责划分"></a>1. 公司治理结构职责划分</h5><ul>
+<li>顶层设计原则：所有涉及公司顶层设计的职责均由董事会或董事会下设委员会负责，这是公司治理的基本原则</li>
+<li>执行层面分工：具体实施方案、方针政策的制定和执行由高管层牵头，或由具体职能部门负责实施</li>
+<li>关键角色：<ul>
+<li><p>董事会：负责重大决策和顶层设计</p>
+</li>
+<li><p>内部审计：负责监督和审计职能</p>
+</li>
+<li><p>风险咨询董事(RAD)：提供专业风险咨询</p>
+</li>
+<li><p>首席风险官(</p>
+<p>  ﻿CROCRO﻿</p>
+<p>  )：全面负责风险管理</p>
+</li>
+</ul>
+</li>
+<li>备考提示：<ul>
+<li>必须明确公司治理结构的层级关系</li>
+<li>需要清晰区分董事会、下设委员会和高管层之间的职责边界</li>
+<li>理解”谁负责什么”的原则性划分，避免死记硬背</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-2-监管法规与公司风险治理的变革"><a href="#3-2-监管法规与公司风险治理的变革" class="headerlink" title="3.2 监管法规与公司风险治理的变革"></a>3.2 监管法规与公司风险治理的变革</h2><h4 id="一、监管法规与公司风险治理的变革"><a href="#一、监管法规与公司风险治理的变革" class="headerlink" title="一、监管法规与公司风险治理的变革"></a>一、监管法规与公司风险治理的变革</h4><p>﻿</p>
+<h5 id="1-萨班斯-奥克斯利法案"><a href="#1-萨班斯-奥克斯利法案" class="headerlink" title="1. 萨班斯-奥克斯利法案"></a>1. 萨班斯-奥克斯利法案</h5><p>﻿</p>
+<ul>
+<li>立法背景：2002年颁布，直接导火索是安然公司财务欺诈案（美国历史上最大破产清算案）</li>
+<li>责任主体：明确要求CEO和CFO对财务报告准确性负法律责任</li>
+<li>核心要求：<ul>
+<li>必须确保向SEC提交的报告准确无误</li>
+<li>必须保证信息披露完整反映公司财务状况</li>
+<li>对内部控制系统的设计和维护负责</li>
+<li>每年必须审查报告程序和控制措施有效性</li>
+<li>强制披露审计委员会成员名单</li>
+</ul>
+</li>
+<li>持续监管机制：建立年度审查制度，形成持续改进闭环</li>
+<li>透明度要求：通过披露审计委员会信息强化监督机制</li>
+</ul>
+<h5 id="2-金融危机后的监管改革与公司治理"><a href="#2-金融危机后的监管改革与公司治理" class="headerlink" title="2. 金融危机后的监管改革与公司治理"></a>2. 金融危机后的监管改革与公司治理</h5><p>﻿﻿</p>
+<h6 id="1）巴塞尔协议演进"><a href="#1）巴塞尔协议演进" class="headerlink" title="1）巴塞尔协议演进"></a>1）巴塞尔协议演进</h6><ul>
+<li>版本迭代：<ul>
+<li>巴塞尔I（1980年代）：聚焦信用风险监管</li>
+<li>巴塞尔II：新增市场风险和操作风险监管，鼓励金融创新</li>
+<li>巴塞尔II.5（2009）：危机期间的紧急补丁</li>
+<li>巴塞尔III：系统性提高银行抗风险能力</li>
+</ul>
+</li>
+<li>监管转向：从鼓励创新转向审慎监管，强调”系统性韧性”</li>
+<li>风险覆盖：从单一信用风险扩展到三大风险（信用、市场、操作）</li>
+</ul>
+<h6 id="2）多德-弗兰克法案"><a href="#2）多德-弗兰克法案" class="headerlink" title="2）多德-弗兰克法案"></a>2）多德-弗兰克法案</h6><ul>
+<li>立法背景：2010年奥巴马签署，美国史上最严金融监管法案</li>
+<li>三大支柱：<ul>
+<li>监管扩权：大幅增强美联储的监管职能</li>
+<li>终结大而不倒：针对系统重要性金融机构（SIFI）<ul>
+<li>要求提交”生前遗嘱”（living will）</li>
+<li>明确破产处置流程（Resolution plan）</li>
+</ul>
+</li>
+<li>衍生品改革：推动场外衍生品场内清算</li>
+</ul>
+</li>
+<li>沃尔克规则：禁止商业银行从事自营交易（proprietary trading）</li>
+<li>消费者保护：设立CFPB监管金融产品</li>
+<li>压力测试：要求金融机构模拟极端情景下的生存能力</li>
+<li>监管创新：<ul>
+<li>建立”有序清算授权”机制</li>
+<li>引入”系统重要性金融机构”认定标准</li>
+<li>强化资本充足率动态监管</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-3-风险治理机制"><a href="#3-3-风险治理机制" class="headerlink" title="3.3 风险治理机制"></a>3.3 风险治理机制</h2><p>﻿</p>
+<h3 id="3-3-1-风险机制"><a href="#3-3-1-风险机制" class="headerlink" title="3.3.1 风险机制"></a>3.3.1 风险机制</h3><h5 id="1-评估"><a href="#1-评估" class="headerlink" title="1. 评估"></a>1. 评估</h5><h6 id="1）风险偏好"><a href="#1）风险偏好" class="headerlink" title="1）风险偏好"></a>1）风险偏好</h6><ul>
+<li>定义：风险偏好（Risk Appetite）指银行选择承担的风险类型和风险水平，与金融机构的业务战略目标和资本规划密切相关。</li>
+<li>资本规划关联：决定资金分配和业务开展方向，本质上是权衡”承担什么风险获得什么收益”的过程。</li>
+<li>沟通要求：需在全公司范围内清晰沟通风险偏好和风险状况，为风险承担活动设定适当限额（Limit）。</li>
+</ul>
+<h6 id="2）风险限额"><a href="#2）风险限额" class="headerlink" title="2）风险限额"></a>2）风险限额</h6><ul>
+<li><p>风险限额的基本概念 </p>
+<ul>
+<li>类比理解：类似财务预算限制，为业务开展设置风险上限。例如营销部门预算有限制，风险限额同理。</li>
+<li>设置维度：在每项业务、业务相关特定风险、企业整体投资组合三个层面设置限额。</li>
+</ul>
+</li>
+<li><p>市场风险限额与信用风险限额 </p>
+<ul>
+<li>市场风险限额：限制由价格、利率和汇率变动引起的风险敞口。例如金融资产购买总额限制500万元。</li>
+<li>信用风险限额：限制对违约或信用质量下降的敞口。例如对某行业贷款不超过总贷款的25%。</li>
+</ul>
+</li>
+<li><p>两个层级的风险限额：I类限额 </p>
+<ul>
+<li>特点：具体性强，包括：<ul>
+<li>资产类别限额（如债券、大盘股、小盘股的分别限额）</li>
+<li>总体压力测试限额（压力测试损失值上限）</li>
+<li>最大回撤限额（Maximum Drawdown Limit，如基金&#x2F;养老金的最大允许回撤）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>两个层级的风险限额：II类限额 </p>
+<ul>
+<li>特点：广泛性分类限额，包括：<ul>
+<li>业务活动领域</li>
+<li>信用评级（如投资级债券不超过80%，垃圾级不超过20%）</li>
+<li>行业（如大宗商品类不超过总头寸15%）</li>
+<li>期限、地区等维度</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>两个层级风险限额的重要性与突破处理 </p>
+<ul>
+<li>监控重点：I类限额监控更严格，因涉及具体资产类别；II类限额相对宽松。</li>
+<li>突破处理：限额可能被突破，突破后需记录并采取纠正措施：<ul>
+<li>I类限额：必须立即纠正</li>
+<li>II类限额：可在几天或一周内处理</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>风险限额与风险偏好的关系 </p>
+<ul>
+<li>传导机制：风险偏好通过风险限额具体表达，使业务条线人员明确操作边界。</li>
+<li>执行特点：业务人员可能不了解公司整体风险偏好，但清楚自身业务的限额要求。</li>
+</ul>
+</li>
+</ul>
+<h6 id="3）风险偏好与限额"><a href="#3）风险偏好与限额" class="headerlink" title="3）风险偏好与限额"></a>3）风险偏好与限额</h6><ul>
+<li>风险治理机制：风险偏好与限额的批准和执行<ul>
+<li>批准机构：董事会风险委员会每年批准公司风险偏好。</li>
+<li>执行机构：高级风险委员会（由董事会授权）负责执行和监督风险偏好框架。</li>
+</ul>
+</li>
+<li>高级风险委员会的组成与职责 <ul>
+<li>组成：首席执行官直接领导，成员包括：<ul>
+<li>首席风险官（CRO）</li>
+<li>首席财务官（CFO）</li>
+<li>财务主管</li>
+<li>首席合规官</li>
+<li>各业务部门负责人</li>
+</ul>
+</li>
+<li>职责：决定金融风险（信用&#x2F;市场风险）与非金融风险（经营&#x2F;操作风险）的限制参数。</li>
+</ul>
+</li>
+<li>风险限额的设定与独立处理 <ul>
+<li>分层处理：小组委员会对每类风险进行细分管理。</li>
+<li>监控要求：持续监控风险是否在限额范畴内。</li>
+</ul>
+</li>
+<li>风险监控与限额突破的处理 <ul>
+<li>预警机制：风险敞口达限额85%时触发预警，通知首席风险官。</li>
+<li>临时提高限额：首席风险官与业务负责人可联合申请临时突破（如债券市场短期机会）。</li>
+<li>突破记录：每日记录超额情况，编制例外报告说明原因和处理方案。</li>
+</ul>
+</li>
+<li>风险偏好陈述书(RAS)的介绍 <ul>
+<li>定义：Risk Appetite Statement（RAS）是公司为实现业务目标而接受&#x2F;避免的风险类型和水平的书面阐述。</li>
+<li>内容形式：<ul>
+<li>包含定性和定量陈述</li>
+<li>涵盖风险偏好和风险容忍度指标</li>
+<li>通过年报等公开文件对外披露</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>风险偏好陈述书的目标 <ul>
+<li>核心目标：<ul>
+<li>风险与回报的平衡</li>
+<li>对尾部风险和突发事件保持谨慎</li>
+<li>实现期望信用评级（如维持投资级以降低发债成本）</li>
+</ul>
+</li>
+<li>信用评级影响：<ul>
+<li>投资级：融资成本低</li>
+<li>垃圾级（高收益债）：融资成本高但可能追求高风险高收益</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="4）激励与风险承担"><a href="#4）激励与风险承担" class="headerlink" title="4）激励与风险承担"></a>4）激励与风险承担</h6><ul>
+<li>金融机构的短期冒险行为与风险忽视 <ul>
+<li>普遍现象：鼓励短期冒险行为，导致管理层低估长期风险。</li>
+</ul>
+</li>
+<li>薪酬委员会的设立与高管薪酬制定 <ul>
+<li>机构设置：董事会下设专门薪酬委员会制定高管薪酬。</li>
+<li>传导效应：高管薪酬结构影响中基层员工薪酬设计。</li>
+</ul>
+</li>
+<li>薪酬制度与风险文化 <ul>
+<li>设计原则：<ul>
+<li>与股东及其他利益相关方长期利益一致</li>
+<li>结合风险调整后的资本回报（RAROC）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>薪酬机制与风险调整后的资本回报 <ul>
+<li>考核维度：不仅看收益&#x2F;销售额，还需评估承担风险带来的回报。</li>
+</ul>
+</li>
+<li>高管薪酬的固定与浮动部分 <ul>
+<li>平衡设计：<ul>
+<li>全固定薪酬导致惰性（旱涝保收）</li>
+<li>全浮动薪酬导致过度激进</li>
+<li>理想比例：固定部分+浮动部分平衡</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>保证奖金的不可行性 <ul>
+<li>禁止条款：不允许设置保证的长期奖金（如每年固定10万奖金），避免激励失效。</li>
+</ul>
+</li>
+<li>股权挂钩与员工持股计划 <ul>
+<li>激励方式：<ul>
+<li>股票&#x2F;期权激励使高管与股东利益一致</li>
+<li>典型案例：华为员工持股计划（超90%员工持股）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>风险管理动作的非割裂性 <ul>
+<li>系统特征：风险偏好、限额、薪酬体系共同构成完整的风险管理机制。</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-风险治理中的相互依赖性"><a href="#2-风险治理中的相互依赖性" class="headerlink" title="2. 风险治理中的相互依赖性"></a>2. 风险治理中的相互依赖性</h5><h6 id="1）风险治理机制：相互依赖与协同工作"><a href="#1）风险治理机制：相互依赖与协同工作" class="headerlink" title="1）风险治理机制：相互依赖与协同工作"></a>1）风险治理机制：相互依赖与协同工作</h6><ul>
+<li>全流程参与：风险治理需要企业各层员工的广泛参与和协同工作，形成相互依赖的治理机制</li>
+<li>传导路径：从业务条线（第一道防线）→财务&#x2F;运营评估→风险管理（第二道防线）→高管层决策，形成闭环反馈</li>
+<li>决策基础：高管层的管理决策并非凭空产生，而是基于员工日常执行中发现的问题进行动态调整</li>
+</ul>
+<h6 id="2）案例：投行交易中的各部门协作"><a href="#2）案例：投行交易中的各部门协作" class="headerlink" title="2）案例：投行交易中的各部门协作"></a>2）案例：投行交易中的各部门协作</h6><ul>
+<li>业务部门：发起交易并承担第一线风险，是风险识别的首要环节</li>
+<li>风险管理部门：设定产品风险限额，监控风险暴露情况</li>
+<li>财务团队：建立估值模型，审核交易最终收益</li>
+<li>运营部门：负责交易结算、录入校验，确保交易合规执行</li>
+<li>高管层：通过监控各环节执行情况，调整整体风险管理策略</li>
+</ul>
+<h6 id="3）运营职能：执行与监督"><a href="#3）运营职能：执行与监督" class="headerlink" title="3）运营职能：执行与监督"></a>3）运营职能：执行与监督</h6><ul>
+<li>双重角色：既参与风险管理执行，又在风险监督中发挥关键作用</li>
+<li>核心职责：<ul>
+<li>交易处理：独立执行、记录并结算各类交易</li>
+<li>头寸核对：对前台交易与后台记录进行双向验证</li>
+<li>信息管理：完整记录所有交易数据，编制收益报告</li>
+<li>独立估值：对银行头寸进行客观估值，确保数据真实性</li>
+</ul>
+</li>
+</ul>
+<h6 id="4）财务部门：制定政策与支持业务"><a href="#4）财务部门：制定政策与支持业务" class="headerlink" title="4）财务部门：制定政策与支持业务"></a>4）财务部门：制定政策与支持业务</h6><ul>
+<li>政策制定：负责估值标准与财务政策的制定</li>
+<li>信息披露：确保收益披露的准确性和完整性</li>
+<li>流程审核：对独立估值方法和流程进行专业审核</li>
+<li>业务支持：<ul>
+<li>承担年度业务规划职能</li>
+<li>为各业务条线提供财务资源支持</li>
+<li>协调业务需求与财务目标的平衡</li>
+</ul>
+</li>
+</ul>
+<h6 id="5）总结：风险治理中的相互依赖性及相关要点"><a href="#5）总结：风险治理中的相互依赖性及相关要点" class="headerlink" title="5）总结：风险治理中的相互依赖性及相关要点"></a>5）总结：风险治理中的相互依赖性及相关要点</h6><ul>
+<li>协同机制：通过各部门专业分工形成风险治理合力</li>
+<li>动态调整：风险限额与业务实践需要持续反馈优化</li>
+<li>激励相容：薪酬激励机制应与风险承担相匹配</li>
+<li>备考重点：理解风险治理架构的运行逻辑而非机械记忆</li>
+</ul>
+<h4 id="二、风险管理治理总结"><a href="#二、风险管理治理总结" class="headerlink" title="二、风险管理治理总结"></a>二、风险管理治理总结</h4><h5 id="1-公司风险治理架构"><a href="#1-公司风险治理架构" class="headerlink" title="1. 公司风险治理架构"></a>1. 公司风险治理架构</h5><ul>
+<li>组织架构：银行设立董事会、高管层及下设委员会（如风险管理委员会）</li>
+<li>设立目的：实现风险管理的分层决策与专业化分工</li>
+<li>监管背景：多德-弗兰克法案和巴塞尔协议推动治理架构变革</li>
+<li>配套机制：风险限额管理、薪酬体系需与风险偏好战略相匹配</li>
+</ul>
+<h5 id="2-风险管理基础模块"><a href="#2-风险管理基础模块" class="headerlink" title="2. 风险管理基础模块"></a>2. 风险管理基础模块</h5><ul>
+<li>核心模块：<ul>
+<li>风险管理基础理论</li>
+<li>公司金融风险管理实务</li>
+<li>监管框架（第三章重点）</li>
+</ul>
+</li>
+<li>学习建议：先建立概念框架，后续通过题目深化理解</li>
+</ul>
+<h5 id="3-监管法规影响"><a href="#3-监管法规影响" class="headerlink" title="3. 监管法规影响"></a>3. 监管法规影响</h5><ul>
+<li>法规收紧原因：<ul>
+<li>2008金融危机暴露原有体系缺陷</li>
+<li>需强化系统性风险防范</li>
+<li>提高银行资本充足率要求</li>
+</ul>
+</li>
+<li>实施要点：<ul>
+<li>风险加权资产计算更严格</li>
+<li>压力测试成为常规要求</li>
+<li>高管薪酬与长期风险挂钩</li>
+</ul>
+</li>
+</ul>
+<h5 id="4-风险偏好体系"><a href="#4-风险偏好体系" class="headerlink" title="4. 风险偏好体系"></a>4. 风险偏好体系</h5><ul>
+<li>构成要素：<ul>
+<li>风险限额：设定各类风险敞口上限</li>
+<li>薪酬机制：风险调整后绩效指标</li>
+<li>报告路线：独立的风险汇报体系</li>
+</ul>
+</li>
+<li>战略衔接：需确保与银行整体战略目标的一致性</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://zengplus.github.io">Zeng +</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zengplus.github.io/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/">https://zengplus.github.io/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://zengplus.github.io" target="_blank">Zeng +</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/FRM/">FRM</a></div><div class="post-share"><div class="social-share" data-image="https://github.com/zengplus.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/" title="FRM学习记录"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">FRM学习记录</div></div><div class="info-2"><div class="info-item-1">2. 投资组合管理 核心理论: MPT理论: 现代投资组合理论的核心原理与有效边界 CAPM模型:  ﻿E(Ri)&#x3D;Rf+βi(E(Rm)−Rf)E(Ri​)&#x3D;Rf​+βi​(E(Rm​)−Rf​)﻿  的推导与应用 APT模型: 多因子定价机制与套利原理   学习重点: 逻辑衔接: 各模型间存在严格推导关系，需循序渐进理解 定量计算: 掌握β系数计算、组合方差公式等核心计算 实务应用: 业绩衡量指标（夏普比率、特雷诺比率等）的对比分析    2.4 现代投资组合理论和资本资产定价模型(###)2.5 业绩衡量指标(###)2.6 套利定价模型和多因子模型(###)3.  高级风险管理 数据整合: 原则: 数据标准化、系统集成、可视化呈现 输出: 风险报告的制作要点与决策支持功能   ERM体系: 核心理念: 打破风险孤岛，实现全面协同管理 实施难点: 风险偏好传导、风险限额分配、风险聚合技术    3.7 有效的数据整合和风险报告原则(#)3.8 企业风险管理(##)4. 金融危机与风险案例 案例教学: 2008危机: 次贷危机传导机制与CDO产品缺陷分析 ...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/" title="FRM学习记录"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-06</div><div class="info-item-2">FRM学习记录</div></div><div class="info-2"><div class="info-item-1">2. 投资组合管理 核心理论: MPT理论: 现代投资组合理论的核心原理与有效边界 CAPM模型:  ﻿E(Ri)&#x3D;Rf+βi(E(Rm)−Rf)E(Ri​)&#x3D;Rf​+βi​(E(Rm​)−Rf​)﻿  的推导与应用 APT模型: 多因子定价机制与套利原理   学习重点: 逻辑衔接: 各模型间存在严格推导关系，需循序渐进理解 定量计算: 掌握β系数计算、组合方差公式等核心计算 实务应用: 业绩衡量指标（夏普比率、特雷诺比率等）的对比分析    2.4 现代投资组合理论和资本资产定价模型(###)2.5 业绩衡量指标(###)2.6 套利定价模型和多因子模型(###)3.  高级风险管理 数据整合: 原则: 数据标准化、系统集成、可视化呈现 输出: 风险报告的制作要点与决策支持功能   ERM体系: 核心理念: 打破风险孤岛，实现全面协同管理 实施难点: 风险偏好传导、风险限额分配、风险聚合技术    3.7 有效的数据整合和风险报告原则(#)3.8 企业风险管理(##)4. 金融危机与风险案例 案例教学: 2008危机: 次贷危机传导机制与CDO产品缺陷分析 ...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://github.com/zengplus.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Zeng +</div><div class="author-info-description">个人博客，分享编程笔记和日常思考</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zengplus"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/zengplus" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">1. 风险管理基础知识(##)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9D%97"><span class="toc-number">1.1.</span> <span class="toc-text">1.1  风险管理基础模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-1-%E9%A3%8E%E9%99%A9%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1.1 风险的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-2-%E9%A2%84%E6%9C%9F%E6%8D%9F%E5%A4%B1%E5%92%8C%E9%9D%9E%E9%A2%84%E6%9C%9F%E6%8D%9F%E5%A4%B1"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.1.2 预期损失和非预期损失</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%A2%84%E6%9C%9F%E6%8D%9F%E5%A4%B1%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">1. 预期损失的定义和特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%9D%9E%E9%A2%84%E6%9C%9F%E6%8D%9F%E5%A4%B1%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">2. 非预期损失的定义和特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%B8%A4%E7%B1%BB%E6%8D%9F%E5%A4%B1%E5%AF%B9%E6%AF%94"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">3. 两类损失对比</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-3-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%92%8C%E9%A3%8E%E9%99%A9%E6%89%BF%E6%8B%85"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.1.3 风险管理和风险承担</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-4-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E8%BF%87%E7%A8%8B"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.1.4 风险管理过程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%A3%8E%E9%99%A9%E8%AF%86%E5%88%AB"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">1. 风险识别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">2. 风险管理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E9%A3%8E%E9%99%A9%E5%88%86%E7%B1%BB"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 风险分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-%E5%B8%82%E5%9C%BA%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.2.1 市场风险</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-%E4%BF%A1%E7%94%A8%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.2.2 信用风险</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-%E6%93%8D%E4%BD%9C%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.3.</span> <span class="toc-text">1.2.3 操作风险</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-%E6%B5%81%E5%8A%A8%E6%80%A7%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.4.</span> <span class="toc-text">1.2.3 流动性风险</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%B8%82%E5%9C%BA%E6%B5%81%E5%8A%A8%E6%80%A7%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.4.1.</span> <span class="toc-text">1. 市场流动性风险</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E8%9E%8D%E8%B5%84%E6%B5%81%E5%8A%A8%E6%80%A7%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.4.2.</span> <span class="toc-text">2. 融资流动性风险</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%EF%BC%89%E5%95%86%E4%B8%9A%E9%93%B6%E8%A1%8C%E8%BF%90%E8%90%A5%E6%9C%BA%E5%88%B6"><span class="toc-number">1.2.4.2.1.</span> <span class="toc-text">1）商业银行运营机制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%EF%BC%89%E5%AE%9E%E9%99%85%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90"><span class="toc-number">1.2.4.2.2.</span> <span class="toc-text">2）实际案例分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-4-%E5%85%B6%E4%BB%96%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.5.</span> <span class="toc-text">1.2.4 其他风险</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%95%86%E4%B8%9A%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.5.1.</span> <span class="toc-text">1. 商业风险</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%88%98%E7%95%A5%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.5.2.</span> <span class="toc-text">2. 战略风险</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%A3%B0%E8%AA%89%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.5.3.</span> <span class="toc-text">3. 声誉风险</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-5-%E9%A3%8E%E9%99%A9%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8"><span class="toc-number">1.2.6.</span> <span class="toc-text">1.2.5 风险的相互作用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%A3%8E%E9%99%A9%E5%88%86%E7%B1%BB%E4%B8%8E%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E6%A6%82%E8%BF%B0"><span class="toc-number">1.2.6.1.</span> <span class="toc-text">1. 风险分类与相互作用概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BE%8B%E9%A2%981-%E5%81%A5%E8%BA%AB%E6%88%BF%E9%A3%8E%E9%99%A9%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90"><span class="toc-number">1.2.6.2.</span> <span class="toc-text">2. 例题1:健身房风险案例分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%BF%A1%E7%94%A8%E9%A3%8E%E9%99%A9%EF%BC%9A%E8%BF%9D%E7%BA%A6%E3%80%81%E9%99%8D%E7%BA%A7%E4%B8%8E%E4%BA%A4%E6%98%93%E5%AF%B9%E6%89%8B%E9%A3%8E%E9%99%A9"><span class="toc-number">1.2.6.3.</span> <span class="toc-text">3. 信用风险：违约、降级与交易对手风险</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%B8%82%E5%9C%BA%E9%A3%8E%E9%99%A9%E4%B8%8E%E5%88%86%E6%95%A3%E5%8C%96%E6%8A%95%E8%B5%84"><span class="toc-number">1.2.6.4.</span> <span class="toc-text">4. 市场风险与分散化投资</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E4%B8%8E%E5%9B%9E%E6%8A%A5"><span class="toc-number">1.2.6.5.</span> <span class="toc-text">5. 风险管理与回报</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-6-%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.6.6.</span> <span class="toc-text">1.2.6 内容总结</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E9%A3%8E%E9%99%A9%E8%A1%A1%E9%87%8F"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 风险衡量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-1-%E9%A3%8E%E9%99%A9%E8%A1%A1%E9%87%8F%E5%92%8C%E7%AE%A1%E7%90%86"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.3.1 风险衡量和管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E8%A1%A1%E9%87%8F%E9%A3%8E%E9%99%A9"><span class="toc-number">1.3.1.0.1.</span> <span class="toc-text">1. 衡量风险</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E5%AE%9A%E9%87%8F%E8%A1%A1%E9%87%8F"><span class="toc-number">1.3.1.0.1.1.</span> <span class="toc-text">1）定量衡量</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E5%AE%9A%E6%80%A7%E8%A1%A1%E9%87%8F"><span class="toc-number">1.3.1.0.1.2.</span> <span class="toc-text">2）定性衡量</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E7%B3%BB%E7%BB%9F%E6%80%A7%E5%8D%B1%E6%9C%BA"><span class="toc-number">1.3.1.0.1.3.</span> <span class="toc-text">3）系统性危机</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E5%B0%BE%E9%83%A8%E9%A3%8E%E9%99%A9%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.3.1.0.1.4.</span> <span class="toc-text">4）尾部风险事件</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 风险管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%89%E9%81%93%E9%98%B2%E7%BA%BF"><span class="toc-number">1.4.0.0.1.</span> <span class="toc-text">三道防线</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E4%B8%8E%E5%88%A9%E7%9B%8A%E5%86%B2%E7%AA%81%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="toc-number">1.4.0.0.1.1.</span> <span class="toc-text">1）代理问题与利益冲突的产生</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E4%B8%89%E9%81%93%E9%98%B2%E7%BA%BF%E7%9A%84%E6%A6%82%E8%BF%B0"><span class="toc-number">1.4.0.0.1.2.</span> <span class="toc-text">2）三道防线的概述</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E7%AC%AC%E4%B8%80%E9%81%93%E9%98%B2%E7%BA%BF%EF%BC%9A%E4%B8%9A%E5%8A%A1%E7%BA%BF"><span class="toc-number">1.4.0.0.1.3.</span> <span class="toc-text">3）第一道防线：业务线</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E7%AC%AC%E4%BA%8C%E9%81%93%E9%98%B2%E7%BA%BF%EF%BC%9A%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E4%BA%BA%E5%91%98"><span class="toc-number">1.4.0.0.1.4.</span> <span class="toc-text">4）第二道防线：风险管理人员</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5%EF%BC%89%E7%AC%AC%E4%B8%89%E9%81%93%E9%98%B2%E7%BA%BF%EF%BC%9A%E5%86%85%E9%83%A8%E5%AE%A1%E8%AE%A1"><span class="toc-number">1.4.0.0.1.5.</span> <span class="toc-text">5）第三道防线：内部审计</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6%EF%BC%89%E4%B8%89%E9%81%93%E9%98%B2%E7%BA%BF%E5%B1%82%E5%B1%82%E9%98%B2%E5%BE%A1%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-number">1.4.0.0.1.6.</span> <span class="toc-text">6）三道防线层层防御的意义</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E9%A3%8E%E9%99%A9%E4%B8%8E%E5%9B%9E%E6%8A%A5%E7%9A%84%E5%B9%B3%E8%A1%A1"><span class="toc-number">1.4.0.0.2.</span> <span class="toc-text">2. 风险与回报的平衡</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E9%A3%8E%E9%99%A9%E8%B0%83%E6%95%B4%E7%9A%84%E8%B5%84%E6%9C%AC%E5%9B%9E%E6%8A%A5%E7%8E%87"><span class="toc-number">1.4.0.0.2.1.</span> <span class="toc-text">1）风险调整的资本回报率</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86"><span class="toc-number">1.4.0.0.3.</span> <span class="toc-text">3. 企业风险管理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E7%BF%BB%E8%AF%91"><span class="toc-number">1.4.0.0.3.1.</span> <span class="toc-text">1）企业风险管理的定义与翻译</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E4%BC%A0%E7%BB%9F%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F%E7%9A%84%E5%BC%8A%E7%AB%AF"><span class="toc-number">1.4.0.0.3.2.</span> <span class="toc-text">2）传统风险管理方式的弊端</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E5%85%A8%E9%9D%A2%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%EF%BC%88ERM%EF%BC%89%E7%9A%84%E7%90%86%E5%BF%B5%E4%B8%8E%E4%BC%98%E5%8A%BF"><span class="toc-number">1.4.0.0.3.3.</span> <span class="toc-text">3）全面风险管理（ERM）的理念与优势</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="toc-number">1.4.0.1.</span> <span class="toc-text">二、风险管理基础概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%A3%8E%E9%99%A9%E6%B5%8B%E9%87%8F%E4%B8%8E%E7%AE%A1%E7%90%86%E6%A6%82%E8%BF%B0"><span class="toc-number">1.4.0.2.</span> <span class="toc-text">三、风险测量与管理概述</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E4%BC%81%E4%B8%9A%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86%E9%A3%8E%E9%99%A9"><span class="toc-number">2.</span> <span class="toc-text">2 企业如何管理风险</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 风险管理路线图</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-1-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">2.1.0.0.1.</span> <span class="toc-text">2.1.1 风险管理路线图</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E7%8E%B0%E4%BB%A3%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7"><span class="toc-number">2.1.0.0.1.1.</span> <span class="toc-text">1）现代风险管理的必要性</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E8%B7%AF%E7%BA%BF%E5%9B%BE%EF%BC%9A%E4%BA%94%E4%B8%AA%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.1.0.0.1.2.</span> <span class="toc-text">2）风险管理路线图：五个步骤</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E5%AF%B9%E5%86%B2%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 对冲的优缺点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-%E5%AF%B9%E5%86%B2%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">2.2.0.1.</span> <span class="toc-text">2.2.1 对冲的优缺点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%AF%B9%E5%86%B2%E7%AD%96%E7%95%A5"><span class="toc-number">2.2.0.1.1.</span> <span class="toc-text">1. 对冲策略</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E5%AF%B9%E5%86%B2%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%9B%AE%E6%A0%87"><span class="toc-number">2.2.0.1.1.1.</span> <span class="toc-text">1）对冲概念与目标</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E5%AF%B9%E5%86%B2%E6%A1%88%E4%BE%8B"><span class="toc-number">2.2.0.1.1.2.</span> <span class="toc-text">2）对冲案例</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E7%AD%96%E7%95%A5%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%AE%9E%E6%96%BD"><span class="toc-number">2.2.0.1.2.</span> <span class="toc-text">2. 策略构建与实施</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E5%AF%B9%E5%86%B2%E6%9C%BA%E5%88%B6%E5%8E%9F%E7%90%86"><span class="toc-number">2.2.0.1.2.1.</span> <span class="toc-text">1）对冲机制原理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E4%BC%81%E4%B8%9A%E8%A7%84%E6%A8%A1%E4%B8%8E%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9"><span class="toc-number">2.2.0.1.2.2.</span> <span class="toc-text">2）企业规模与工具选择</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E5%AF%B9%E5%86%B2%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83"><span class="toc-number">2.2.0.1.2.3.</span> <span class="toc-text">3）对冲类型比较</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E6%9C%9F%E9%99%90%E8%A7%84%E5%88%92%E8%A6%81%E7%82%B9"><span class="toc-number">2.2.0.1.2.4.</span> <span class="toc-text">4）期限规划要点</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5%EF%BC%89%E8%A1%8D%E7%94%9F%E5%93%81%E4%BD%BF%E7%94%A8%E5%A4%8D%E6%9D%82%E6%80%A7"><span class="toc-number">2.2.0.1.2.5.</span> <span class="toc-text">5）衍生品使用复杂性</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%AE%9E%E5%8A%A1%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">2.2.0.1.3.</span> <span class="toc-text">3. 实务注意事项</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%AF%B9%E5%86%B2%E9%A3%8E%E9%99%A9%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">2.2.0.1.4.</span> <span class="toc-text">4. 对冲风险的优缺点</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E4%BC%98%E7%82%B9"><span class="toc-number">2.2.0.1.4.1.</span> <span class="toc-text">1）优点</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E7%BC%BA%E7%82%B9"><span class="toc-number">2.2.0.1.4.2.</span> <span class="toc-text">2）缺点</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E5%AF%B9%E5%86%B2%E9%A3%8E%E9%99%A9%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E6%80%BB%E7%BB%93"><span class="toc-number">2.2.0.1.5.</span> <span class="toc-text">5. 对冲风险的优缺点总结</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E4%BC%81%E4%B8%9A%E8%B5%84%E9%87%91%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AF%B9%E5%86%B2%E6%80%81%E5%BA%A6%E6%A6%82%E8%BF%B0"><span class="toc-number">2.2.0.1.5.1.</span> <span class="toc-text">1）企业资金来源与对冲态度概述</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E5%80%BA%E6%9D%83%E4%BA%BA%E8%BF%BD%E6%B1%82%E7%A8%B3%E5%AE%9A%E6%80%A7%EF%BC%8C%E6%94%AF%E6%8C%81%E5%AF%B9%E5%86%B2"><span class="toc-number">2.2.0.1.5.2.</span> <span class="toc-text">2）债权人追求稳定性，支持对冲</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E8%82%A1%E4%B8%9C%E9%80%9A%E8%BF%87%E7%BB%84%E5%90%88%E5%88%86%E6%95%A3%E5%8C%96%E9%99%8D%E4%BD%8E%E9%A3%8E%E9%99%A9%EF%BC%8C%E5%8F%AF%E8%83%BD%E4%B8%8D%E6%94%AF%E6%8C%81%E5%AF%B9%E5%86%B2"><span class="toc-number">2.2.0.1.5.3.</span> <span class="toc-text">3）股东通过组合分散化降低风险，可能不支持对冲</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%89%8B%E6%AE%B5"><span class="toc-number">2.2.0.1.6.</span> <span class="toc-text">6. 风险管理工具与手段</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E9%99%90%E9%A2%9D%E7%AE%A1%E7%90%86%EF%BC%9A%E9%99%90%E5%88%B6%E9%A3%8E%E9%99%A9%E6%89%BF%E6%8B%85%E9%A2%9D%E5%BA%A6"><span class="toc-number">2.2.0.1.6.1.</span> <span class="toc-text">1）限额管理：限制风险承担额度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E5%9C%A8%E9%99%A9%E4%BB%B7%E5%80%BC-VaR-%EF%BC%9A%E4%B8%8D%E8%83%BD%E5%8F%8D%E6%98%A0%E6%9E%81%E7%AB%AF%E5%B8%82%E5%9C%BA%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E6%BD%9C%E5%9C%A8%E6%8D%9F%E5%A4%B1%E5%B9%85%E5%BA%A6"><span class="toc-number">2.2.0.1.6.2.</span> <span class="toc-text">2）在险价值(VaR)：不能反映极端市场环境下的潜在损失幅度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E3%80%81%E6%95%8F%E6%84%9F%E6%80%A7%E5%88%86%E6%9E%90%E5%92%8C%E6%83%85%E6%99%AF%E5%88%86%E6%9E%90%EF%BC%9A%E9%9A%BE%E4%BB%A5%E7%A1%AE%E4%BF%9D%E6%B6%B5%E7%9B%96%E6%89%80%E6%9C%89%E9%A3%8E%E9%99%A9%E5%9B%A0%E7%B4%A0"><span class="toc-number">2.2.0.1.6.3.</span> <span class="toc-text">3）压力测试、敏感性分析和情景分析：难以确保涵盖所有风险因素</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E6%89%8B%E6%AE%B5%E7%9A%84%E5%A4%9A%E6%A0%B7%E6%80%A7%EF%BC%9A%E7%BB%84%E5%90%88%E6%8B%B3"><span class="toc-number">2.2.0.1.6.4.</span> <span class="toc-text">4）风险管理手段的多样性：组合拳</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5%EF%BC%89%E5%AF%B9%E5%86%B2%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E5%8F%8A%E8%82%A1%E4%B8%9C%E5%92%8C%E5%80%BA%E6%9D%83%E4%BA%BA%E7%9A%84%E6%80%81%E5%BA%A6"><span class="toc-number">2.2.0.1.6.5.</span> <span class="toc-text">5）对冲的优缺点及股东和债权人的态度</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6%E6%80%BB%E7%BB%93"><span class="toc-number">2.2.0.2.</span> <span class="toc-text">2.2.2 风险管理框架总结</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AE%9E%E6%96%BD%E8%B7%AF%E5%BE%84"><span class="toc-number">2.2.0.2.1.</span> <span class="toc-text">1. 风险管理实施路径</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E7%9A%84%E6%B2%BB%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">3 风险管理的治理(##)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E5%9F%BA%E7%A1%80"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 风险治理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86"><span class="toc-number">3.1.0.0.0.1.</span> <span class="toc-text">1）公司治理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86"><span class="toc-number">3.1.0.0.0.2.</span> <span class="toc-text">2）风险治理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86%E7%BB%93%E6%9E%84"><span class="toc-number">3.1.0.0.0.3.</span> <span class="toc-text">3）公司治理结构</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E8%91%A3%E4%BA%8B%E4%BC%9A"><span class="toc-number">3.1.0.0.0.4.</span> <span class="toc-text">4）董事会</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E5%9F%BA%E7%A1%80"><span class="toc-number">3.1.0.1.</span> <span class="toc-text">一、风险治理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E8%91%A3%E4%BA%8B%E4%BC%9A%E5%9C%A8%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E4%B8%AD%E7%9A%84%E6%A0%B8%E5%BF%83%E4%BD%9C%E7%94%A8"><span class="toc-number">3.1.0.1.1.</span> <span class="toc-text">1. 董事会在风险治理中的核心作用</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E9%A3%8E%E6%8E%A7%E4%BD%93%E7%B3%BB%EF%BC%9A%E7%A1%AE%E4%BF%9D%E5%85%AC%E5%8F%B8%E5%BB%BA%E7%AB%8B%E6%9C%89%E6%95%88%E7%9A%84%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E4%BD%93%E7%B3%BB"><span class="toc-number">3.1.0.1.1.1.</span> <span class="toc-text">1）风控体系：确保公司建立有效的风险管理体系</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E4%B8%9A%E7%BB%A9%E8%AF%84%E4%BC%B0%EF%BC%9A%E8%AF%84%E4%BC%B0%E5%85%AC%E5%8F%B8%E7%9A%84%E7%BB%A9%E6%95%88%E6%8C%87%E6%A0%87%E5%92%8C%E8%96%AA%E9%85%AC%E7%AD%96%E7%95%A5"><span class="toc-number">3.1.0.1.1.2.</span> <span class="toc-text">2）业绩评估：评估公司的绩效指标和薪酬策略</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%EF%BC%9A%E5%AF%B9%E7%9B%91%E7%9D%A3%E4%B8%8E%E9%A3%8E%E9%99%A9%E9%80%8F%E6%98%8E%E5%BA%A6%E8%B4%9F%E8%B4%A3"><span class="toc-number">3.1.0.1.1.3.</span> <span class="toc-text">3）信息披露：对监督与风险透明度负责</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E8%91%A3%E4%BA%8B%E4%BC%9A%E4%B8%8B%E8%AE%BE%E5%A7%94%E5%91%98%E4%BC%9A%E7%9A%84%E9%A1%B6%E5%B1%82%E8%AE%BE%E8%AE%A1%E4%BD%9C%E7%94%A8"><span class="toc-number">3.1.0.1.1.4.</span> <span class="toc-text">4）董事会下设委员会的顶层设计作用</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E8%91%A3%E4%BA%8B%E4%BC%9A%E5%B1%82%E9%9D%A2%E7%9A%84%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86"><span class="toc-number">3.1.0.1.2.</span> <span class="toc-text">2. 董事会层面的风险治理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A"><span class="toc-number">3.1.0.1.2.1.</span> <span class="toc-text">1）风险管理委员会</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E5%AE%A1%E8%AE%A1%E5%A7%94%E5%91%98%E4%BC%9A"><span class="toc-number">3.1.0.1.2.2.</span> <span class="toc-text">2）审计委员会</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E9%A3%8E%E9%99%A9%E5%92%A8%E8%AF%A2%E8%91%A3%E4%BA%8B"><span class="toc-number">3.1.0.1.2.3.</span> <span class="toc-text">3）风险咨询董事</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%86%85%E9%83%A8%E5%AE%A1%E8%AE%A1"><span class="toc-number">3.1.0.1.3.</span> <span class="toc-text">3. 内部审计</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E9%A6%96%E5%B8%AD%E9%A3%8E%E9%99%A9%E5%AE%98"><span class="toc-number">3.1.0.1.4.</span> <span class="toc-text">4. 首席风险官</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E9%A6%96%E5%B8%AD%E9%A3%8E%E9%99%A9%E5%AE%98%E6%A6%82%E8%BF%B0"><span class="toc-number">3.1.0.1.4.1.</span> <span class="toc-text">1）首席风险官概述</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E9%A6%96%E5%B8%AD%E9%A3%8E%E9%99%A9%E5%AE%98%E8%81%8C%E8%B4%A3%E4%B8%8E%E8%A7%92%E8%89%B2"><span class="toc-number">3.1.0.1.4.2.</span> <span class="toc-text">2）首席风险官职责与角色</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E4%B8%8E%E8%91%A3%E4%BA%8B%E4%BC%9A%E4%B8%8B%E8%AE%BE%E5%A7%94%E5%91%98%E4%BC%9A"><span class="toc-number">3.1.0.1.4.3.</span> <span class="toc-text">3）风险管理委员会与董事会下设委员会</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E8%91%A3%E4%BA%8B%E4%BC%9A%E9%A3%8E%E9%99%A9%E5%A7%94%E5%91%98%E4%BC%9A%E6%9E%84%E6%88%90%E4%B8%8E%E6%89%A7%E8%A1%8C"><span class="toc-number">3.1.0.1.4.4.</span> <span class="toc-text">4）董事会风险委员会构成与执行</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5%EF%BC%89%E9%A3%8E%E9%99%A9%E5%92%A8%E8%AF%A2%E8%91%A3%E4%BA%8B%E4%B8%8E%E5%86%85%E9%83%A8%E5%AE%A1%E8%AE%A1"><span class="toc-number">3.1.0.1.4.5.</span> <span class="toc-text">5）风险咨询董事与内部审计</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6%EF%BC%89%E5%86%85%E9%83%A8%E5%AE%A1%E8%AE%A1%E7%9A%84%E8%81%8C%E8%B4%A3"><span class="toc-number">3.1.0.1.4.6.</span> <span class="toc-text">6）内部审计的职责</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%93"><span class="toc-number">3.1.0.2.</span> <span class="toc-text">二、内容总结</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86%E7%BB%93%E6%9E%84%E8%81%8C%E8%B4%A3%E5%88%92%E5%88%86"><span class="toc-number">3.1.0.2.1.</span> <span class="toc-text">1. 公司治理结构职责划分</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E7%9B%91%E7%AE%A1%E6%B3%95%E8%A7%84%E4%B8%8E%E5%85%AC%E5%8F%B8%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E7%9A%84%E5%8F%98%E9%9D%A9"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 监管法规与公司风险治理的变革</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%9B%91%E7%AE%A1%E6%B3%95%E8%A7%84%E4%B8%8E%E5%85%AC%E5%8F%B8%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E7%9A%84%E5%8F%98%E9%9D%A9"><span class="toc-number">3.2.0.1.</span> <span class="toc-text">一、监管法规与公司风险治理的变革</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E8%90%A8%E7%8F%AD%E6%96%AF-%E5%A5%A5%E5%85%8B%E6%96%AF%E5%88%A9%E6%B3%95%E6%A1%88"><span class="toc-number">3.2.0.1.1.</span> <span class="toc-text">1. 萨班斯-奥克斯利法案</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E9%87%91%E8%9E%8D%E5%8D%B1%E6%9C%BA%E5%90%8E%E7%9A%84%E7%9B%91%E7%AE%A1%E6%94%B9%E9%9D%A9%E4%B8%8E%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86"><span class="toc-number">3.2.0.1.2.</span> <span class="toc-text">2. 金融危机后的监管改革与公司治理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E5%B7%B4%E5%A1%9E%E5%B0%94%E5%8D%8F%E8%AE%AE%E6%BC%94%E8%BF%9B"><span class="toc-number">3.2.0.1.2.1.</span> <span class="toc-text">1）巴塞尔协议演进</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E5%A4%9A%E5%BE%B7-%E5%BC%97%E5%85%B0%E5%85%8B%E6%B3%95%E6%A1%88"><span class="toc-number">3.2.0.1.2.2.</span> <span class="toc-text">2）多德-弗兰克法案</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E6%9C%BA%E5%88%B6"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 风险治理机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-1-%E9%A3%8E%E9%99%A9%E6%9C%BA%E5%88%B6"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1 风险机制</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E8%AF%84%E4%BC%B0"><span class="toc-number">3.3.1.0.1.</span> <span class="toc-text">1. 评估</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD"><span class="toc-number">3.3.1.0.1.1.</span> <span class="toc-text">1）风险偏好</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E9%A3%8E%E9%99%A9%E9%99%90%E9%A2%9D"><span class="toc-number">3.3.1.0.1.2.</span> <span class="toc-text">2）风险限额</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD%E4%B8%8E%E9%99%90%E9%A2%9D"><span class="toc-number">3.3.1.0.1.3.</span> <span class="toc-text">3）风险偏好与限额</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E6%BF%80%E5%8A%B1%E4%B8%8E%E9%A3%8E%E9%99%A9%E6%89%BF%E6%8B%85"><span class="toc-number">3.3.1.0.1.4.</span> <span class="toc-text">4）激励与风险承担</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E4%B8%AD%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BE%9D%E8%B5%96%E6%80%A7"><span class="toc-number">3.3.1.0.2.</span> <span class="toc-text">2. 风险治理中的相互依赖性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%EF%BC%89%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E6%9C%BA%E5%88%B6%EF%BC%9A%E7%9B%B8%E4%BA%92%E4%BE%9D%E8%B5%96%E4%B8%8E%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C"><span class="toc-number">3.3.1.0.2.1.</span> <span class="toc-text">1）风险治理机制：相互依赖与协同工作</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%EF%BC%89%E6%A1%88%E4%BE%8B%EF%BC%9A%E6%8A%95%E8%A1%8C%E4%BA%A4%E6%98%93%E4%B8%AD%E7%9A%84%E5%90%84%E9%83%A8%E9%97%A8%E5%8D%8F%E4%BD%9C"><span class="toc-number">3.3.1.0.2.2.</span> <span class="toc-text">2）案例：投行交易中的各部门协作</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%EF%BC%89%E8%BF%90%E8%90%A5%E8%81%8C%E8%83%BD%EF%BC%9A%E6%89%A7%E8%A1%8C%E4%B8%8E%E7%9B%91%E7%9D%A3"><span class="toc-number">3.3.1.0.2.3.</span> <span class="toc-text">3）运营职能：执行与监督</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%EF%BC%89%E8%B4%A2%E5%8A%A1%E9%83%A8%E9%97%A8%EF%BC%9A%E5%88%B6%E5%AE%9A%E6%94%BF%E7%AD%96%E4%B8%8E%E6%94%AF%E6%8C%81%E4%B8%9A%E5%8A%A1"><span class="toc-number">3.3.1.0.2.4.</span> <span class="toc-text">4）财务部门：制定政策与支持业务</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5%EF%BC%89%E6%80%BB%E7%BB%93%EF%BC%9A%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E4%B8%AD%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BE%9D%E8%B5%96%E6%80%A7%E5%8F%8A%E7%9B%B8%E5%85%B3%E8%A6%81%E7%82%B9"><span class="toc-number">3.3.1.0.2.5.</span> <span class="toc-text">5）总结：风险治理中的相互依赖性及相关要点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E6%B2%BB%E7%90%86%E6%80%BB%E7%BB%93"><span class="toc-number">3.3.1.1.</span> <span class="toc-text">二、风险管理治理总结</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%85%AC%E5%8F%B8%E9%A3%8E%E9%99%A9%E6%B2%BB%E7%90%86%E6%9E%B6%E6%9E%84"><span class="toc-number">3.3.1.1.1.</span> <span class="toc-text">1. 公司风险治理架构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9D%97"><span class="toc-number">3.3.1.1.2.</span> <span class="toc-text">2. 风险管理基础模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E7%9B%91%E7%AE%A1%E6%B3%95%E8%A7%84%E5%BD%B1%E5%93%8D"><span class="toc-number">3.3.1.1.3.</span> <span class="toc-text">3. 监管法规影响</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD%E4%BD%93%E7%B3%BB"><span class="toc-number">3.3.1.1.4.</span> <span class="toc-text">4. 风险偏好体系</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/07/2026-01-07-FRM%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/" title="FRM风险管理学习记录">FRM风险管理学习记录</a><time datetime="2026-01-06T15:00:00.000Z" title="发表于 2026-01-07 00:00:00">2026-01-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/06/2026-01-06%20FRM%E5%AD%A6%E4%B9%A0/" title="FRM学习记录">FRM学习记录</a><time datetime="2026-01-05T15:00:00.000Z" title="发表于 2026-01-06 00:00:00">2026-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/16/2025-07-16-%E8%A1%8C%E6%B5%8B%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="行测学习记录">行测学习记录</a><time datetime="2025-07-15T15:00:00.000Z" title="发表于 2025-07-16 00:00:00">2025-07-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/13/2025-07-13-%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E8%87%AA%E8%AE%B0%E5%BD%95/" title="量化金融自记录">量化金融自记录</a><time datetime="2025-07-12T15:00:00.000Z" title="发表于 2025-07-13 00:00:00">2025-07-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/27/2025-05-27-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%87%AA%E8%AE%B0%E5%BD%95/" title="博客搭建自记录">博客搭建自记录</a><time datetime="2025-05-26T15:00:00.000Z" title="发表于 2025-05-27 00:00:00">2025-05-27</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Zeng +</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
